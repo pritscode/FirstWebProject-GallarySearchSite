@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연습용 미술관 검색 홈페이지- 서울전체</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script>
+    function clickthis() {
+      alert("현재는 서울검색 서비스만 운영중입니다.");
+    }
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./image/logo.png" alt="logo" width="30" height="24">
+      </a>
+      <a class="navbar-brand" href="#">전시회 검색 전용 홈페이지 - 서울전체</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="" onclick="clickthis()">전국</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              서울
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="http://192.168.0.20:5500/individual_project/gallarySearchSeoul.html">서울 전체</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">서울시립미술관</a></li>
+              <li><a class="dropdown-item" href="#">국립현대미술관</a></li>
+              <li><a class="dropdown-item" href="#">세종문화회관</a></li>
+              <li><a class="dropdown-item" href="#">경인미술관</a></li>
+              <li><a class="dropdown-item" href="#">K현대미술관</a></li>
+              <li><a class="dropdown-item" href="#">아트바바</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">코엑스</a></li>
+              <li><a class="dropdown-item" href="#">양재 AT 센터</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="clickthis()">인천</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="clickthis()">경기</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="clickthis()">충청도</a>
+          </li>
+          <li class="nav-item">
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="clickthis()">강원도</a>
+          </li>
+          <li class="nav-item">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              남부
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" onclick="clickthis()">전라도 전체</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#" onclick="clickthis()">광주</a></li>
+              <li><a class="dropdown-item" href="#" onclick="clickthis()">전북</a></li>
+              <li><a class="dropdown-item" href="#" onclick="clickthis()">전남</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#" onclick="clickthis()">경상도 전체</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#" onclick="clickthis()">부산</a></li>
+              <li><a class="dropdown-item" href="#" onclick="clickthis()">대구</a></li>
+              <li><a class="dropdown-item" href="#" onclick="clickthis()">울산</a></li>
+              <li><a class="dropdown-item" href="#" onclick="clickthis()">경북</a></li>
+              <li><a class="dropdown-item" href="#" onclick="clickthis()">경남</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#" onclick="clickthis()">제주도</a></li>
+            </ul>
+          </li>
+
+          <a class="nav-link" href="#" onclick="clickthis()">마이페이지</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">로그인</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">회원가입</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="서울시립미술관" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit" style="width: 80px;">검색</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="img_wrap" style="position: relative; height: 1441.59px;">
+    <article style="position: absolute; left: 0%; top: 0px;">
+      <a href="#" class="">
+        <div class="img_box work">
+          <img src="https://thub.kumsung.co.kr//upfiles2/arthub/painting/202301/94jaltfv0rs08cfjfkikhrnpsn.jpg" alt="">
+        </div>
+        <div class="txt_wrap">
+          <p class="title">미미 팽송의 집</p>
+          <ul class="list">
+            <li class="item">
+              <span>작가</span><span>위트릴로</span>
+            </li>
+            <li class="item">
+              <span>재료와 기법</span><span> 캔버스, 유채 </span>
+            </li>
+            <li class="item"><span>제작연도</span><span>1913년</span>
+            </li>
+            <li class="item">
+              <span>소장</span><span>파리, 개인 소장</span>
+            </li>
+          </ul>
+        </div>
+      </a>
+    </article>
+</div>
+</body>
+
+</html>
