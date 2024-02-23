@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>연습용 미술관 검색 홈페이지- 서울전체</title>
+  <title>연습용 미술관 검색 홈페이지</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -20,10 +20,11 @@
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="http://192.168.0.20:5500/individual_project/gallarySearchMain.html">
         <img src="./image/logo.png" alt="logo" width="30" height="24">
       </a>
-      <a class="navbar-brand" href="#">전시회 검색 전용 홈페이지 - 서울전체</a>
+      <a class="navbar-brand" href="http://192.168.0.20:5500/individual_project/gallarySearchMain.html">전시회 검색 전용
+        홈페이지</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -38,7 +39,8 @@
               서울
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="http://192.168.0.20:5500/individual_project/gallarySearchSeoul.html">서울 전체</a></li>
+              <li><a class="dropdown-item" href="http://192.168.0.20:5500/individual_project/gallarySearchSeoul.html">서울
+                  전체</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
@@ -116,31 +118,99 @@
       </div>
     </div>
   </nav>
-  <div class="img_wrap" style="position: relative; height: 1441.59px;">
-    <article style="position: absolute; left: 0%; top: 0px;">
-      <a href="#" class="">
-        <div class="img_box work">
-          <img src="https://thub.kumsung.co.kr//upfiles2/arthub/painting/202301/94jaltfv0rs08cfjfkikhrnpsn.jpg" alt="">
-        </div>
-        <div class="txt_wrap">
-          <p class="title">미미 팽송의 집</p>
-          <ul class="list">
-            <li class="item">
-              <span>작가</span><span>위트릴로</span>
-            </li>
-            <li class="item">
-              <span>재료와 기법</span><span> 캔버스, 유채 </span>
-            </li>
-            <li class="item"><span>제작연도</span><span>1913년</span>
-            </li>
-            <li class="item">
-              <span>소장</span><span>파리, 개인 소장</span>
-            </li>
+
+
+
+  <div class="row">
+    <div class="col-sm-1">
+      <!-- col-sm-1.5 -->
+      <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+        <a href="http://192.168.0.20:5500/individual_project/gallarySearchSeoulArtMuseum.html">
+          <button type="button" class="btn btn-primary">미술관별 검색</button>
+        </a>
+        <a href="http://192.168.0.20:5500/individual_project/gallarySearchSeoulExhibition.html">
+          <button type="button" class="btn btn-primary">전시회별 검색</button>
+        </a>
+        <div class="btn-group dropend" role="group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            지역별 검색
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">지역1</a></li>
+            <li><a class="dropdown-item" href="#">지역2</a></li>
           </ul>
         </div>
-      </a>
-    </article>
-</div>
+      </div>
+    </div>
+    <div class="col-sm-11">
+      <!-- col-sm-11 -->
+      <div class="row">
+          서울전체
+      </div>
+      <div class="row row-cols-1 row-cols-md-5 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
