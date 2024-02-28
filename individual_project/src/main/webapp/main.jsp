@@ -32,59 +32,71 @@
       <span class="visually-hidden">다음</span>
     </button>
   </div>
-  <h2>인기 전시회</h2>
-  <hr>
-  <div class="card-group">
-    <div class="card">
-      <img src="./image/전시회1.gif" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">전시회1</h5>
-        <p class="card-text">전시회1입니다.</p>
-        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+  <div class="row">
+    <div class="col-2">
+      <div id="list-example" class="list-group">
+        <a class="list-group-item list-group-item-action" href="#list-item-1">인기전시회</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-2">최신전시회</a>
       </div>
     </div>
-    <div class="card">
-      <img src="./image/전시회2.gif" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">전시회2</h5>
-        <p class="card-text">전시회2입니다.</p>
-        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="./image/전시회3.gif" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">전시회3</h5>
-        <p class="card-text">전시회3입니다.</p>
-        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-  </div>
-  <h2>최신 전시회</h2>
-  <hr>
-  <div class="card-group">
-    <div class="card">
-      <img src="./image/전시회1.gif" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">전시회1</h5>
-        <p class="card-text">전시회1입니다.</p>
-        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="./image/전시회2.gif" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">전시회2</h5>
-        <p class="card-text">전시회2입니다.</p>
-        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="./image/전시회3.gif" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">전시회3</h5>
-        <p class="card-text">전시회3입니다.</p>
-        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    <div class="col-10">
+      <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+        <h2 id="list-item-1">인기 전시회</h2>
+        <hr>
+        <div class="card-group">
+          <div class="card">
+            <img src="./image/전시회1.gif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">전시회1</h5>
+              <p class="card-text">전시회1입니다.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./image/전시회2.gif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">전시회2</h5>
+              <p class="card-text">전시회2입니다.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./image/전시회3.gif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">전시회3</h5>
+              <p class="card-text">전시회3입니다.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+        <h2 id="list-item-2">최신 전시회</h2>
+        <hr>
+        <div class="card-group">
+          <div class="card">
+            <img src="./image/전시회1.gif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">전시회1</h5>
+              <p class="card-text">전시회1입니다.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./image/전시회2.gif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">전시회2</h5>
+              <p class="card-text">전시회2입니다.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./image/전시회3.gif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">전시회3</h5>
+              <p class="card-text">전시회3입니다.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
