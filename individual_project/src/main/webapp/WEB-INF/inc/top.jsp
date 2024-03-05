@@ -59,21 +59,21 @@
 						<li><a class="dropdown-item" href="#">코엑스</a></li>
 						<li><a class="dropdown-item" href="#">양재 AT 센터</a></li>
 					</ul></li>
-				<li class="nav-item"><a class="nav-link" href="#"
+				<li class="nav-item"><a class="nav-link" href="incheon.jsp"
 					onclick="clickthis()">인천</a></li>
-				<li class="nav-item"><a class="nav-link" href="#"
+				<li class="nav-item"><a class="nav-link" href="gyeonggi.jsp"
 					onclick="clickthis()">경기</a></li>
-				<li class="nav-item"><a class="nav-link" href="#"
+				<li class="nav-item"><a class="nav-link" href="chungcheong.jsp"
 					onclick="clickthis()">충청도</a></li>
 				<li class="nav-item">
-				<li class="nav-item"><a class="nav-link" href="#"
+				<li class="nav-item"><a class="nav-link" href="gangwon.jsp"
 					onclick="clickthis()">강원도</a></li>
 				<li class="nav-item">
 				<li class="nav-item dropdown"><a
 					class="nav-link dropdown-toggle" href="#" role="button"
 					data-bs-toggle="dropdown" aria-expanded="false"> 남부 </a>
 					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="#" onclick="clickthis()">전라도
+						<li><a class="dropdown-item" href="jeolla.jsp" onclick="clickthis()">전라도
 								전체</a></li>
 						<li>
 							<hr class="dropdown-divider">
@@ -84,7 +84,7 @@
 						<li>
 							<hr class="dropdown-divider">
 						</li>
-						<li><a class="dropdown-item" href="#" onclick="clickthis()">경상도
+						<li><a class="dropdown-item" href="gyeongsang.jsp" onclick="clickthis()">경상도
 								전체</a></li>
 						<li>
 							<hr class="dropdown-divider">
@@ -97,7 +97,7 @@
 						<li>
 							<hr class="dropdown-divider">
 						</li>
-						<li><a class="dropdown-item" href="#" onclick="clickthis()">제주도</a></li>
+						<li><a class="dropdown-item" href="jeju.jsp" onclick="clickthis()">제주도</a></li>
 					</ul></li>
 				<li class="nav-item"><a class="nav-link" href="#"
 					onclick="clickthis()">마이페이지</a></li>
