@@ -47,7 +47,7 @@
 						<li>
 							<hr class="dropdown-divider">
 						</li>
-						<li><a class="dropdown-item" href="#">서울시립미술관</a></li>
+						<li><a class="dropdown-item" href="seoulMuseumofArt.jsp">서울시립미술관</a></li>
 						<li><a class="dropdown-item" href="#">국립현대미술관</a></li>
 						<li><a class="dropdown-item" href="#">세종문화회관</a></li>
 						<li><a class="dropdown-item" href="#">경인미술관</a></li>
