@@ -4,6 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<style>
+  .enlarge-text {
+    font-size: 50px;
+  }
+</style>
+
 <title>전시회 검색 사이트</title>
 </head>
 <body>
@@ -33,7 +39,7 @@
     <div class="col-sm-11">
       <!-- col-sm-11 -->
       <div class="row">
-          인천전체
+          <span class="enlarge-text">인천전체</span>
       </div>
       <div class="row row-cols-1 row-cols-md-5 g-4">
         <div class="col">
