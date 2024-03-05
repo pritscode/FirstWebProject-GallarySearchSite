@@ -22,7 +22,7 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
 	<div class="container-fluid">
 		<a class="navbar-brand"
-			href="http://192.168.0.20:5500/individual_project/gallarySearchMain.html">
+			href="main.jsp">
 			<img src="./image/logo.png" alt="logo" width="30" height="24">
 		</a> <a class="navbar-brand"
 			href="main.jsp">전시회
@@ -38,7 +38,7 @@
 				<li class="nav-item"><a class="nav-link active"
 					aria-current="page" href="#" onclick="clickthis()">전국</a></li>
 				<li class="nav-item dropdown"><a
-					class="nav-link dropdown-toggle" href="#" role="button"
+					class="nav-link dropdown-toggle" href="seoul.jsp" role="button"
 					data-bs-toggle="dropdown" aria-expanded="false"> 서울 </a>
 					<ul class="dropdown-menu">
 						<li><a class="dropdown-item"
