@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gallery.my.user.dao.IUserDAO">
+
+<insert id="registUser" parameterType="com.gallery.my.user.vo.UserVO">
+	
+	INSERT INTO gallery_user (id, pw, nm)
+    VALUES(#{id}, #{pw]}, #{nm})
+
+</insert>
+<!-- <select id="loginUser" parameterType="UserVO" resultType="UserVO">
+	SELECT id
+         , pw
+         , nm
+	FROM gallery_user 
+	WHERE use_yn = 'Y'
+	AND id = #{id}
+
+</select>
+
+<update id="profileUpload" parameterType="UserVO">
+	UPDATE gallery_user
+	SET profile_img = #{profileImg}
+	WHERE id = #{id}
+</update>
+ -->
+
+</mapper>
