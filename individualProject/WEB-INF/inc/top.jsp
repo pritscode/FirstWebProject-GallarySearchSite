@@ -1,15 +1,3 @@
-<%--
-/**
- * <pre>
- * 1. 프로젝트명 : 전시회 검색 홈페이지 구현 개인 프로젝트
- * 2. 작성일 : 2024. 3. 7. 오후 5:57:01
- * 3. 작성자 : prit
- * 4. 화면ID : 화면정의서 화면ID
- * 5. 화면명 : 화면정의서의 화면명
- * 6. 설명 : 화면명과 동일하거나 기타 특이사항 기술
- * </pre>
- */
---%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -45,12 +33,9 @@
 </script>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
 	<div class="container-fluid">
-		<a class="navbar-brand"
-			href="main.jsp">
-			<img src="./image/logo.png" alt="logo" width="30" height="24">
-		</a> <a class="navbar-brand"
-			href="main.jsp">전시회
-			검색 전용 홈페이지</a>
+		<a class="navbar-brand" href="<c:url value="/"/>"> <img
+			src="assets/img/image/logo.png" alt="logo" width="30" height="24">
+		</a> <a class="navbar-brand" href="<c:url value="/"/>">전시회 검색 전용 홈페이지</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 			data-bs-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -65,9 +50,7 @@
 					class="nav-link dropdown-toggle" href="#" role="button"
 					data-bs-toggle="dropdown" aria-expanded="false"> 서울 </a>
 					<ul class="dropdown-menu">
-						<li><a class="dropdown-item"
-							href="seoul.jsp">서울
-								전체</a></li>
+						<li><a class="dropdown-item" href="<c:url value="/seoul"/>">서울 전체</a></li>
 						<li>
 							<hr class="dropdown-divider">
 						</li>
@@ -97,8 +80,8 @@
 					class="nav-link dropdown-toggle" href="#" role="button"
 					data-bs-toggle="dropdown" aria-expanded="false"> 남부 </a>
 					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="jeolla.jsp" onclick="clickthis()">전라도
-								전체</a></li>
+						<li><a class="dropdown-item" href="jeolla.jsp"
+							onclick="clickthis()">전라도 전체</a></li>
 						<li>
 							<hr class="dropdown-divider">
 						</li>
@@ -108,8 +91,8 @@
 						<li>
 							<hr class="dropdown-divider">
 						</li>
-						<li><a class="dropdown-item" href="gyeongsang.jsp" onclick="clickthis()">경상도
-								전체</a></li>
+						<li><a class="dropdown-item" href="gyeongsang.jsp"
+							onclick="clickthis()">경상도 전체</a></li>
 						<li>
 							<hr class="dropdown-divider">
 						</li>
@@ -121,14 +104,20 @@
 						<li>
 							<hr class="dropdown-divider">
 						</li>
-						<li><a class="dropdown-item" href="jeju.jsp" onclick="clickthis()">제주도</a></li>
+						<li><a class="dropdown-item" href="jeju.jsp"
+							onclick="clickthis()">제주도</a></li>
 					</ul></li>
+
+			</ul>
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				<li class="nav-item"><a class="nav-link" href="#"
 					onclick="clickthis()">마이페이지</a></li>
-				<li class="nav-item"><a class="nav-link" href="login.jsp">로그인</a>
+				<li class="nav-item"><a class="nav-link" href="<c:url value="/loginView"/>">로그인</a>
 				</li>
-				<li class="nav-item"><a class="nav-link" href="register.jsp">회원가입</a>
+				<li class="nav-item"><a class="nav-link" href="<c:url value="/registView"/>">회원가입</a>
 				</li>
+				<li class="nav-item"><a class="nav-link" href="#"
+					onclick="clickthis()">문의게시판</a></li>
 			</ul>
 			<form class="d-flex" role="search">
 				<input class="form-control me-2" type="search" placeholder="서울시립미술관"
