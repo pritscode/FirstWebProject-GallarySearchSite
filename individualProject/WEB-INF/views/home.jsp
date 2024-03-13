@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page session="false" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,13 +13,13 @@
 	<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="height: 500px;">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="./image/seoulmuseumofart.jpg" class="d-block w-100" height="500px" alt="...">
+        <img src="assets/img/image/seoulmuseumofart.jpg" class="d-block w-100" height="500px" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="./image/nationalMuseumofModernand....jpg" class="d-block w-100" height="500px" alt="...">
+        <img src="assets/img/image/nationalMuseumofModernand....jpg" class="d-block w-100" height="500px" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="./image/sejong.png" class="d-block w-100" height="500px" alt="...">
+        <img src="assets/img/image/sejong.png" class="d-block w-100" height="500px" alt="...">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -45,7 +46,7 @@
         <hr>
         <div class="card-group">
           <div class="card">
-            <img src="./image/전시회1.gif" class="card-img-top" alt="...">
+            <img src="assets/img/image/전시회1.gif" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">전시회1</h5>
               <p class="card-text">전시회1입니다.</p>
@@ -53,7 +54,7 @@
             </div>
           </div>
           <div class="card">
-            <img src="./image/전시회2.gif" class="card-img-top" alt="...">
+            <img src="assets/img/image/전시회2.gif" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">전시회2</h5>
               <p class="card-text">전시회2입니다.</p>
@@ -61,7 +62,7 @@
             </div>
           </div>
           <div class="card">
-            <img src="./image/전시회3.gif" class="card-img-top" alt="...">
+            <img src="assets/img/image/전시회3.gif" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">전시회3</h5>
               <p class="card-text">전시회3입니다.</p>
@@ -73,7 +74,7 @@
         <hr>
         <div class="card-group">
           <div class="card">
-            <img src="./image/전시회1.gif" class="card-img-top" alt="...">
+            <img src="assets/img/image/전시회1.gif" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">전시회1</h5>
               <p class="card-text">전시회1입니다.</p>
@@ -81,7 +82,7 @@
             </div>
           </div>
           <div class="card">
-            <img src="./image/전시회2.gif" class="card-img-top" alt="...">
+            <img src="assets/img/image/전시회2.gif" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">전시회2</h5>
               <p class="card-text">전시회2입니다.</p>
@@ -89,7 +90,7 @@
             </div>
           </div>
           <div class="card">
-            <img src="./image/전시회3.gif" class="card-img-top" alt="...">
+            <img src="assets/img/image/전시회3.gif" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">전시회3</h5>
               <p class="card-text">전시회3입니다.</p>
