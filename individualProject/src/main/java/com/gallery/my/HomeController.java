@@ -37,7 +37,7 @@ public class HomeController {
 	}
 	
 	@RequestMapping("/seoul")
-	public String seolu() {
+	public String seoul() {
 		return "/seoul";
 	}
 	
