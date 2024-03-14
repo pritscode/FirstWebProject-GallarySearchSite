@@ -45,7 +45,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				<li class="nav-item"><a class="nav-link active"
-					aria-current="page" href="nationwide.jsp" onclick="nofunction()">전국</a></li>
+					aria-current="page" href="<c:url value="/nation"/>" onclick="nofunction()">전체</a></li>
 				<li class="nav-item dropdown"><a
 					class="nav-link dropdown-toggle" href="#" role="button"
 					data-bs-toggle="dropdown" aria-expanded="false"> 서울 </a>
@@ -117,9 +117,9 @@
 			</c:if>
 			<c:if test="${sessionScope.login != null}">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#" onclick="nofunction()">${sessionScope.login.id}님의 마이페이지</a></li>
+					<li class="nav-item"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="<c:url value="/mypageView" />" onclick="nofunction()">${sessionScope.login.id}님의 마이페이지</a></li>
 					<li class="nav-item"><a class="nav-link py-3 px-0 px-lg-3 rounded"href="<c:url value="/logoutDo" />">로그아웃</a></li>
-					<li class="nav-item"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#" onclick="nofunction()">문의게시판</a></li>
+					<li class="nav-item"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="<c:url value="/" />" onclick="nofunction()">문의게시판</a></li>
 				</ul>
 			</c:if>
 			<form class="d-flex" role="search">
