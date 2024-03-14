@@ -98,11 +98,22 @@ public class UserController {
 	}
 	
 	@RequestMapping("/mypageView")
-	public String mypageView(HttpSession session, Model model) {
+	public String mypageView(HttpSession session) {
 		if(session.getAttribute("login") == null) {
 			return "redirect:/loginView";
 		}
-		return "member/mypageView";
+		return "user/mypageView";
+	}
+	
+	@RequestMapping("/modifyingDo")
+	public String modifyingDo(UserVO vo, RedirectAttributes re, HttpSession session
+		,HttpServletResponse resp) throws Exception {
+		UserVO login = (UserVO) session.getAttribute("login");
+		userservice.modifyingUI(vo);
+		login.setNm(vo.getNm());
+		session.setAttribute("login",login);
+		
+		return "user/mypageView";
 	}
 	
 }
