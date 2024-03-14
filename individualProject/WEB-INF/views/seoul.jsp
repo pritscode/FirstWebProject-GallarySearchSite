@@ -19,13 +19,13 @@
       <!-- col-sm-1.5 -->
       <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
         <a href="http://192.168.0.20:5500/individual_project/gallarySearchSeoulArtMuseum.html">
-          <button type="button" class="btn btn-primary">미술관별 검색</button>
+          <button type="button" class="btn btn-dark btn-primary">미술관별 검색</button>
         </a>
         <a href="http://192.168.0.20:5500/individual_project/gallarySearchSeoulExhibition.html">
-          <button type="button" class="btn btn-primary">전시회별 검색</button>
+          <button type="button" class="btn btn-dark btn-primary">전시회별 검색</button>
         </a>
         <div class="btn-group dropend" role="group">
-          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <button type="button" class="btn btn-dark btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             지역별 검색
           </button>
           <ul class="dropdown-menu">
