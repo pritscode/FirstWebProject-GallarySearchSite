@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>회원가입</title>
+<title>전시회 검색 전용 홈페이지 - 로그인</title>
 </head>
 <body>
 	<jsp:include page="/WEB-INF/inc/top.jsp"></jsp:include>
