@@ -36,9 +36,4 @@ public class HomeController {
 		return "home";
 	}
 	
-	@RequestMapping("/seoul")
-	public String seoul() {
-		return "/seoul";
-	}
-	
 }
