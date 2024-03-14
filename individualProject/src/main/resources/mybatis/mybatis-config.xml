@@ -9,4 +9,8 @@
 	  <!-- 널허용 -->
 	  <setting name="jdbcTypeForNull" value="NULL" />
 	</settings>
+	<!-- mapper vo 매핑 -->
+	<typeAliases>
+		<typeAlias type="com.gallery.my.user.vo.UserVO" alias="UserVO"/>
+	</typeAliases>
 </configuration>
