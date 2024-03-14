@@ -39,8 +39,8 @@
   <div class="row">
     <div class="col-2">
       <div id="list-example" class="list-group">
-        <a class="list-group-item list-group-item-action" href="#list-item-1">인기전시회</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-2">최신전시회</a>
+        <a class="list-group-item list-group-item-action list-group-item-light" href="#list-item-1">인기전시회</a>
+        <a class="list-group-item list-group-item-action list-group-item-light" href="#list-item-2">최신전시회</a>
       </div>
     </div>
     <div class="col-10">
