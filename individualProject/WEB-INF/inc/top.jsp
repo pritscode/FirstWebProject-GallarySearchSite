@@ -27,7 +27,7 @@
 <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 <!-- nav영역 -->
 <script>
-	function clickthis() {
+	function nofunction() {
 		alert("현재는 서울검색 서비스만 운영중입니다.");
 	}
 </script>
@@ -45,7 +45,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				<li class="nav-item"><a class="nav-link active"
-					aria-current="page" href="nationwide.jsp" onclick="clickthis()">전국</a></li>
+					aria-current="page" href="nationwide.jsp" onclick="nofunction()">전국</a></li>
 				<li class="nav-item dropdown"><a
 					class="nav-link dropdown-toggle" href="#" role="button"
 					data-bs-toggle="dropdown" aria-expanded="false"> 서울 </a>
@@ -67,58 +67,61 @@
 						<li><a class="dropdown-item" href="#">양재 AT 센터</a></li>
 					</ul></li>
 				<li class="nav-item"><a class="nav-link" href="incheon.jsp"
-					onclick="clickthis()">인천</a></li>
+					onclick="nofunction()">인천</a></li>
 				<li class="nav-item"><a class="nav-link" href="gyeonggi.jsp"
-					onclick="clickthis()">경기</a></li>
+					onclick="nofunction()">경기</a></li>
 				<li class="nav-item"><a class="nav-link" href="chungcheong.jsp"
-					onclick="clickthis()">충청도</a></li>
+					onclick="nofunction()">충청도</a></li>
 				<li class="nav-item">
 				<li class="nav-item"><a class="nav-link" href="gangwon.jsp"
-					onclick="clickthis()">강원도</a></li>
+					onclick="nofunction()">강원도</a></li>
 				<li class="nav-item">
 				<li class="nav-item dropdown"><a
 					class="nav-link dropdown-toggle" href="#" role="button"
 					data-bs-toggle="dropdown" aria-expanded="false"> 남부 </a>
 					<ul class="dropdown-menu">
 						<li><a class="dropdown-item" href="jeolla.jsp"
-							onclick="clickthis()">전라도 전체</a></li>
+							onclick="nofunction()">전라도 전체</a></li>
 						<li>
 							<hr class="dropdown-divider">
 						</li>
-						<li><a class="dropdown-item" href="#" onclick="clickthis()">광주</a></li>
-						<li><a class="dropdown-item" href="#" onclick="clickthis()">전북</a></li>
-						<li><a class="dropdown-item" href="#" onclick="clickthis()">전남</a></li>
+						<li><a class="dropdown-item" href="#" onclick="nofunction()">광주</a></li>
+						<li><a class="dropdown-item" href="#" onclick="nofunction()">전북</a></li>
+						<li><a class="dropdown-item" href="#" onclick="nofunction()">전남</a></li>
 						<li>
 							<hr class="dropdown-divider">
 						</li>
 						<li><a class="dropdown-item" href="gyeongsang.jsp"
-							onclick="clickthis()">경상도 전체</a></li>
+							onclick="nofunction()">경상도 전체</a></li>
 						<li>
 							<hr class="dropdown-divider">
 						</li>
-						<li><a class="dropdown-item" href="#" onclick="clickthis()">부산</a></li>
-						<li><a class="dropdown-item" href="#" onclick="clickthis()">대구</a></li>
-						<li><a class="dropdown-item" href="#" onclick="clickthis()">울산</a></li>
-						<li><a class="dropdown-item" href="#" onclick="clickthis()">경북</a></li>
-						<li><a class="dropdown-item" href="#" onclick="clickthis()">경남</a></li>
+						<li><a class="dropdown-item" href="#" onclick="nofunction()">부산</a></li>
+						<li><a class="dropdown-item" href="#" onclick="nofunction()">대구</a></li>
+						<li><a class="dropdown-item" href="#" onclick="nofunction()">울산</a></li>
+						<li><a class="dropdown-item" href="#" onclick="nofunction()">경북</a></li>
+						<li><a class="dropdown-item" href="#" onclick="nofunction()">경남</a></li>
 						<li>
 							<hr class="dropdown-divider">
 						</li>
 						<li><a class="dropdown-item" href="jeju.jsp"
-							onclick="clickthis()">제주도</a></li>
+							onclick="nofunction()">제주도</a></li>
 					</ul></li>
 
 			</ul>
-			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				<li class="nav-item"><a class="nav-link" href="#"
-					onclick="clickthis()">마이페이지</a></li>
-				<li class="nav-item"><a class="nav-link" href="<c:url value="/loginView"/>">로그인</a>
-				</li>
-				<li class="nav-item"><a class="nav-link" href="<c:url value="/registView"/>">회원가입</a>
-				</li>
-				<li class="nav-item"><a class="nav-link" href="#"
-					onclick="clickthis()">문의게시판</a></li>
-			</ul>
+			<c:if test="${sessionScope.login == null}">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a class="nav-link" href="<c:url value="/loginView"/>">로그인</a></li>
+					<li class="nav-item"><a class="nav-link" href="<c:url value="/registView"/>">회원가입</a></li>
+				</ul>
+			</c:if>
+			<c:if test="${sessionScope.login != null}">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#" onclick="nofunction()">${sessionScope.login.id}님의 마이페이지</a></li>
+					<li class="nav-item"><a class="nav-link py-3 px-0 px-lg-3 rounded"href="<c:url value="/logoutDo" />">로그아웃</a></li>
+					<li class="nav-item"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#" onclick="nofunction()">문의게시판</a></li>
+				</ul>
+			</c:if>
 			<form class="d-flex" role="search">
 				<input class="form-control me-2" type="search" placeholder="서울시립미술관"
 					aria-label="Search">
