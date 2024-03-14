@@ -11,4 +11,6 @@ public interface IUserDAO {
 	public int registUser(UserVO vo);
 	//회원조회
 	public UserVO loginUser(UserVO vo);
+	//정보수정
+	public int modifyingUI(UserVO vo);
 }
