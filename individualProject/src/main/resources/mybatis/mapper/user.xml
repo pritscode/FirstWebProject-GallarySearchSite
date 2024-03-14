@@ -5,7 +5,7 @@
 <insert id="registUser" parameterType="com.gallery.my.user.vo.UserVO">
 	
 	INSERT INTO gallery_user (id, pw, nm)
-    VALUES(#{id}, #{pw]}, #{nm})
+    VALUES(#{id}, #{pw}, #{nm})
 
 </insert>
 <!-- <select id="loginUser" parameterType="UserVO" resultType="UserVO">
