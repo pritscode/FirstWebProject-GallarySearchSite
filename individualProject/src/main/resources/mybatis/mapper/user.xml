@@ -8,7 +8,7 @@
     VALUES(#{id}, #{pw}, #{nm})
 
 </insert>
-<!-- <select id="loginUser" parameterType="UserVO" resultType="UserVO">
+<select id="loginUser" parameterType="UserVO" resultType="UserVO">
 	SELECT id
          , pw
          , nm
@@ -18,11 +18,10 @@
 
 </select>
 
-<update id="profileUpload" parameterType="UserVO">
+<update id="modifyingUI" parameterType="UserVO">
 	UPDATE gallery_user
-	SET profile_img = #{profileImg}
+	SET nm = #{nm}
 	WHERE id = #{id}
 </update>
- -->
 
 </mapper>
