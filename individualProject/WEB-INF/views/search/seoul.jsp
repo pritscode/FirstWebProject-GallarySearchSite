@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,17 +26,15 @@
 				aria-label="Vertical button group">
 				<a
 					href="http://192.168.0.20:5500/individual_project/gallarySearchSeoulArtMuseum.html">
-					<button type="button" class="btn btn-dark btn-primary">미술관별
-						검색</button>
+					<button type="button" class="btn btn-dark btn-primary">미술관</button>
 				</a> <a
 					href="http://192.168.0.20:5500/individual_project/gallarySearchSeoulExhibition.html">
-					<button type="button" class="btn btn-dark btn-primary">전시회별
-						검색</button>
+					<button type="button" class="btn btn-dark btn-primary">전시회</button>
 				</a>
 				<div class="btn-group dropend" role="group">
 					<button type="button"
 						class="btn btn-dark btn-primary dropdown-toggle"
-						data-bs-toggle="dropdown" aria-expanded="false">지역별 검색</button>
+						data-bs-toggle="dropdown" aria-expanded="false">지역</button>
 					<ul class="dropdown-menu">
 						<li><a class="dropdown-item" href="#">지역1</a></li>
 						<li><a class="dropdown-item" href="#">지역2</a></li>
