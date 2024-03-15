@@ -48,7 +48,7 @@
 					aria-current="page" href="<c:url value="/nation"/>" onclick="nofunction()">전체</a></li>
 				<li class="nav-item dropdown"><a
 					class="nav-link dropdown-toggle" href="#" role="button"
-					data-bs-toggle="dropdown" aria-expanded="false"> 서울 </a>
+					data-bs-toggle="dropdown" aria-expanded="false">서울</a>
 					<ul class="dropdown-menu">
 						<li><a class="dropdown-item" href="<c:url value="/seoul"/>">서울 전체</a></li>
 						<li>
@@ -66,22 +66,15 @@
 						<li><a class="dropdown-item" href="#">코엑스</a></li>
 						<li><a class="dropdown-item" href="#">양재 AT 센터</a></li>
 					</ul></li>
-				<li class="nav-item"><a class="nav-link" href="incheon.jsp"
-					onclick="nofunction()">인천</a></li>
-				<li class="nav-item"><a class="nav-link" href="gyeonggi.jsp"
-					onclick="nofunction()">경기</a></li>
-				<li class="nav-item"><a class="nav-link" href="chungcheong.jsp"
-					onclick="nofunction()">충청도</a></li>
-				<li class="nav-item">
-				<li class="nav-item"><a class="nav-link" href="gangwon.jsp"
-					onclick="nofunction()">강원도</a></li>
-				<li class="nav-item">
-				<li class="nav-item dropdown"><a
-					class="nav-link dropdown-toggle" href="#" role="button"
-					data-bs-toggle="dropdown" aria-expanded="false"> 남부 </a>
+				<li class="nav-item"><a class="nav-link" href="incheon.jsp" onclick="nofunction()">인천</a></li>
+				<li class="nav-item"><a class="nav-link" href="gyeonggi.jsp" onclick="nofunction()">경기</a></li>
+				<li class="nav-item"><a class="nav-link" href="chungcheong.jsp" onclick="nofunction()">충청도</a></li>
+				<li class="nav-item"><a class="nav-link" href="gangwon.jsp" onclick="nofunction()">강원도</a></li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button"
+					data-bs-toggle="dropdown" aria-expanded="false">남부</a>
 					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="jeolla.jsp"
-							onclick="nofunction()">전라도 전체</a></li>
+						<li><a class="dropdown-item" href="jeolla.jsp" onclick="nofunction()">전라도 전체</a></li>
 						<li>
 							<hr class="dropdown-divider">
 						</li>
@@ -117,9 +110,9 @@
 			</c:if>
 			<c:if test="${sessionScope.login != null}">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="<c:url value="/mypageView" />" onclick="nofunction()">${sessionScope.login.id}님의 마이페이지</a></li>
+					<li class="nav-item"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="<c:url value="/mypageView" />">${sessionScope.login.id}님의 마이페이지</a></li>
 					<li class="nav-item"><a class="nav-link py-3 px-0 px-lg-3 rounded"href="<c:url value="/logoutDo" />">로그아웃</a></li>
-					<li class="nav-item"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="<c:url value="/" />" onclick="nofunction()">문의게시판</a></li>
+					<li class="nav-item"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="<c:url value="/" />">문의게시판</a></li>
 				</ul>
 			</c:if>
 			<form class="d-flex" role="search">
