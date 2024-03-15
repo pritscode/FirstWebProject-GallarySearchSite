@@ -20,7 +20,7 @@
 
 <update id="modifyingUI" parameterType="UserVO">
 	UPDATE gallery_user
-	SET nm = #{nm}
+	SET pw = #{pw}, nm = #{nm}, age = #{age}, gender = #{gender}
 	WHERE id = #{id}
 </update>
 
