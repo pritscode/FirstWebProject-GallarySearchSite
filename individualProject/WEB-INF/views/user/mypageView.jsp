@@ -87,6 +87,8 @@ window.onload=function(){
 							<div class="col-sm-7">
 								<p>${sessionScope.login.nm}</p>
 								<p>${sessionScope.login.id}</p>
+								<p>${sessionScope.login.gender}</p>
+								<p>${sessionScope.login.age}</p>
 							</div>
 							<div class="col-sm-5">
 								<div id="calendar"></div>
@@ -113,8 +115,49 @@ window.onload=function(){
                         <form method="post" action="<c:url value="/modifyingDo" />">
                             <div class="form-floating mb-3">
                             	<input name="id" value="${sessionScope.login.id}" type="hidden" />
-                                <input class="form-control" value="${sessionScope.login.nm }" id="nm" name="nm" type="text" placeholder="이름을 입력해주세요" />
+                                <input class="form-control" value="${sessionScope.login.pw}" id="pw" name="pw" type="password" placeholder="비밀번호를 입력해주세요" />
+                                <label for="pw">비밀번호</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" value="${sessionScope.login.nm}" id="nm" name="nm" type="text" placeholder="이름을 입력해주세요" />
                                 <label for="nm">이름</label>
+                            </div>
+                            <div>
+                            	성별
+	                            <div class="form-check">
+	  								<input ${sessionScope.login.gender == "M" ? "checked" : ""}
+	  								 class="form-check-input" type="radio" name="gender" id="flexRadioDefault1" value="M" checked>
+									<label class="form-check-label" for="flexRadioDefault1">
+	   									남자
+	  								</label>
+								</div>
+								<div class="form-check">
+									<input ${sessionScope.login.gender == "W" ? "checked" : ""}
+									 class="form-check-input" type="radio" name="gender" id="flexRadioDefault2" value="W">
+									<label class="form-check-label" for="flexRadioDefault2">
+										여자
+									</label>
+								</div>
+								<div class="form-check">
+									<input ${sessionScope.login.gender == null ? "checked" : ""}
+									 class="form-check-input" type="radio" name="gender" id="flexRadioDefault3" value="">
+									<label class="form-check-label" for="flexRadioDefault3">
+										선택안함
+									</label>
+								</div>
+                            </div>
+                            <div>
+                            	연령대
+	                            <select class="form-select" name="age" aria-label="Default select example">
+									<option ${sessionScope.login.age == null ? "selected" : ""} value="" selected>선택안함</option>
+									<option ${sessionScope.login.age == "10s" ? "selected" : ""} value="10s">10대</option>
+									<option ${sessionScope.login.age == "20s" ? "selected" : ""} value="20s">20대</option>
+									<option ${sessionScope.login.age == "30s" ? "selected" : ""} value="30s">30대</option>
+									<option ${sessionScope.login.age == "40s" ? "selected" : ""} value="40s">40대</option>
+									<option ${sessionScope.login.age == "50s" ? "selected" : ""} value="50s">50대</option>
+									<option ${sessionScope.login.age == "60s" ? "selected" : ""} value="60s">60대</option>
+									<option ${sessionScope.login.age == "70sorder" ? "selected" : ""} value="70sorder">70대 이상</option>
+								</select>
                             </div>
                             <button class="btn btn-primary btn-xl btn-dark" id="submitButton" type="submit">수정하기</button>
                         </form>
