@@ -20,97 +20,30 @@
 	</div>
 	<hr>
 	<div class="row">
-		<div class="col-sm-1">
-			<!-- col-sm-1.5 -->
-			<div class="btn-group-vertical" role="group"
-				aria-label="Vertical button group">
-				<a
-					href="http://192.168.0.20:5500/individual_project/gallarySearchSeoulArtMuseum.html">
-					<button type="button" class="btn btn-dark btn-primary">미술관</button>
-				</a> <a
-					href="http://192.168.0.20:5500/individual_project/gallarySearchSeoulExhibition.html">
-					<button type="button" class="btn btn-dark btn-primary">전시회</button>
-				</a>
-				<div class="btn-group dropend" role="group">
-					<button type="button"
-						class="btn btn-dark btn-primary dropdown-toggle"
-						data-bs-toggle="dropdown" aria-expanded="false">지역</button>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="#">지역1</a></li>
-						<li><a class="dropdown-item" href="#">지역2</a></li>
-					</ul>
-				</div>
+		<div class="col-sm-2">
+			<!-- col-sm-2 -->
+			<div class="list-group" id="mylist" role="tablist">
+				<a class="list-group-item list-group-item-action active list-group-item-light"
+					data-bs-toggle="list" href="#list-1" role="tab">미술관</a>
+				<a class="list-group-item list-group-item-action list-group-item-light"
+					data-bs-toggle="list" href="#list-2" role="tab">전시회</a>
+				<a class="list-group-item list-group-item-action list-group-item-light"
+					data-bs-toggle="list" href="#list-3" role="tab">지역</a>
 			</div>
 		</div>
-		<div class="col-sm-11">
-			<!-- col-sm-11 -->
-			<div class="row row-cols-1 row-cols-md-5 g-4">
-				<div class="col">
-					<div class="card">
-						<img src="..." class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">This is a longer card with supporting
-								text below as a natural lead-in to additional content. This
-								content is a little bit longer.</p>
-						</div>
+		<div class="col-sm-10">
+			<!-- col-sm-10 -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="list-1" role="tabpanel">
+					1
+					</div>
+					<div class="tab-pane" id="list-2" role="tabpanel">
+					2
+					</div>
+					<div class="tab-pane" id="list-3" role="tabpanel">
+					3
 					</div>
 				</div>
-				<div class="col">
-					<div class="card">
-						<img src="..." class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">This is a longer card with supporting
-								text below as a natural lead-in to additional content. This
-								content is a little bit longer.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card">
-						<img src="..." class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">This is a longer card with supporting
-								text below as a natural lead-in to additional content.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card">
-						<img src="..." class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">This is a longer card with supporting
-								text below as a natural lead-in to additional content. This
-								content is a little bit longer.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card">
-						<img src="..." class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">This is a longer card with supporting
-								text below as a natural lead-in to additional content. This
-								content is a little bit longer.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card">
-						<img src="..." class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">This is a longer card with supporting
-								text below as a natural lead-in to additional content. This
-								content is a little bit longer.</p>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
 	</div>
 	<!-- content region -->
