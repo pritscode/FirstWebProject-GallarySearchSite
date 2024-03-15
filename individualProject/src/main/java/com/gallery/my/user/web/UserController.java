@@ -110,7 +110,10 @@ public class UserController {
 		,HttpServletResponse resp) throws Exception {
 		UserVO login = (UserVO) session.getAttribute("login");
 		userservice.modifyingUI(vo);
+		login.setPw(vo.getPw());
 		login.setNm(vo.getNm());
+		login.setAge(vo.getAge());
+		login.setGender(vo.getGender());
 		session.setAttribute("login",login);
 		
 		return "user/mypageView";
