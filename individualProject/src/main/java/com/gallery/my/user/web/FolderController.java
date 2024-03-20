@@ -1,15 +1,20 @@
 package com.gallery.my.user.web;
 
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.gallery.my.user.service.FolderService;
 import com.gallery.my.user.service.UserService;
 import com.gallery.my.user.vo.FolderVO;
+import com.gallery.my.user.vo.UserVO;
 
 @Controller
 public class FolderController {
@@ -47,4 +52,25 @@ public class FolderController {
 		return "redirect:/mypageView";
 	}
 	
+	@RequestMapping("/foldContentView")
+	public String mypageView(HttpSession session, Model model, FolderVO vo) {
+		System.out.println(vo);
+		UserVO login = (UserVO) session.getAttribute("login");
+		if(login == null) {
+			return "redirect:/loginView";
+		}
+//		vo.setId(login.getId());
+		
+		List<FolderVO> arr = folderservice.userFold(vo);
+		List<FolderVO> arrC = folderservice.foldContent(vo);
+		model.addAttribute("arr", arr);
+		model.addAttribute("arrC", arrC);
+		
+		return "user/foldContentView";
+	}
+	
+	@RequestMapping("/nonePage")
+	public String nonePage() {
+		return "user/nonePage";
+	}
 }
