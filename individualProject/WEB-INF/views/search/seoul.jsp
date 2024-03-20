@@ -49,7 +49,15 @@
 									</a>
 								</div>
 								<div class="card-footer">
-									<small class="text-body-secondary">♡ 즐겨찾기</small>
+									<form method="post" action="<c:url value="/insertFContentDo" />" >
+										<div class="form-group">
+											<input name="id" value="${sessionScope.login.id}" type="hidden" />
+											<input name="galNo" value="1" type="hidden" />
+											<input type="text" class="form-control" placeholder="폴더이름" name="foldNm" maxlength="20" data-sb-validations="required" />
+											<input type="hidden" name="fromURL" value="${fromURL}">
+										</div>
+										<input type="submit"><small class="text-body-secondary">♡ 즐겨찾기</small></input>
+									</form>
 								</div>
 							</div>
 							<div class="card">
@@ -61,7 +69,15 @@
 									</a>
 								</div>
 								<div class="card-footer">
-									<small class="text-body-secondary">♡ 즐겨찾기</small>
+									<form method="post" action="<c:url value="/insertFContentDo" />" >
+										<div class="form-group">
+											<input name="id" value="${sessionScope.login.id}" type="hidden" />
+											<input name="galNo" value="2" type="hidden" />
+											<input name="foldNo" value="" type="" />
+											<input type="hidden" name="fromURL" value="${fromURL}">
+										</div>
+										<input type="submit"><small class="text-body-secondary">♡ 즐겨찾기</small></input>
+									</form>
 								</div>
 							</div>
 							<div class="card">
@@ -73,7 +89,15 @@
 									</a>
 								</div>
 								<div class="card-footer">
-									<small class="text-body-secondary">♡ 즐겨찾기</small>
+									<form method="post" action="<c:url value="/insertFContentDo" />" >
+										<div class="form-group">
+											<input name="id" value="${sessionScope.login.id}" type="hidden" />
+											<input name="galNo" value="3" type="hidden" />
+											<input name="foldNo" value="${sessionScope.login.id}" type="hidden" />
+											<input type="hidden" name="fromURL" value="${fromURL}">
+										</div>
+										<input type="submit"><small class="text-body-secondary">♡ 즐겨찾기</small></input>
+									</form>
 								</div>
 							</div>
 						</div>
