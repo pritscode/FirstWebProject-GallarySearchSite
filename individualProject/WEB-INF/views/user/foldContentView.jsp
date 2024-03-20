@@ -20,10 +20,6 @@
 		<span class="enlarge-text">마이페이지 - 관심 미술관 폴더</span>
 	</div>
 	<hr>
-	<!--<p>${sessionScope.login.nm}</p>
-		<p>${sessionScope.login.id}</p>
-		<p>${sessionScope.login.gender}</p>
-		<p>${sessionScope.login.age}</p> -->
 	<div class="row">
 	<h3>${folder.foldNm}</h3>
 	<!-- <c:set var="cgurl" value="${sessionScope.folder.galUrl}" scope="request" /> -->
