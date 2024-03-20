@@ -1,5 +1,7 @@
 package com.gallery.my.user.web;
 
+import java.util.List;
+
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -11,7 +13,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import com.gallery.my.user.service.FolderService;
 import com.gallery.my.user.service.UserService;
+import com.gallery.my.user.vo.FolderVO;
 import com.gallery.my.user.vo.UserVO;
 
 @Controller
@@ -19,6 +23,9 @@ public class UserController {
 
 	@Autowired
 	UserService userservice;
+	
+	@Autowired
+	FolderService folderservice;
 	
 	@RequestMapping("/registView")
 	public String registView() {
@@ -47,7 +54,7 @@ public class UserController {
 		String reqURL = req.getHeader("Referer");
 		model.addAttribute("fromURL", reqURL);
 		return "user/loginView";
-	}		
+	}
 	
 	@RequestMapping("/loginDo")
 	public String loginDo(UserVO vo, HttpSession session, boolean remember
@@ -98,10 +105,21 @@ public class UserController {
 	}
 	
 	@RequestMapping("/mypageView")
-	public String mypageView(HttpSession session) {
-		if(session.getAttribute("login") == null) {
+	public String mypageView(HttpSession session, Model model) {
+		UserVO login = (UserVO) session.getAttribute("login");
+		if(login == null) {
 			return "redirect:/loginView";
 		}
+		FolderVO vo = new FolderVO();
+		vo.setId(login.getId());
+		
+		List<FolderVO> arr = folderservice.userFold(vo);
+		List<FolderVO> arrE = folderservice.userEFold(vo);
+		List<FolderVO> arrC = folderservice.foldContent(vo);
+		model.addAttribute("arr", arr);
+		model.addAttribute("arrE", arrE);
+		model.addAttribute("arrC", arrC);
+		
 		return "user/mypageView";
 	}
 	
@@ -117,6 +135,11 @@ public class UserController {
 		session.setAttribute("login",login);
 		
 		return "user/mypageView";
+	}
+	
+	@RequestMapping("/nonePage")
+	public String nonePage() {
+		return "user/nonePage";
 	}
 	
 }
