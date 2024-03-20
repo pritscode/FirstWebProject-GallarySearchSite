@@ -36,8 +36,8 @@ public class FolderService {
 	}
 	
 	//전시회 폴더 조회
-	public List<FolderVO> userserEFold(FolderVO vo) {
-		return dao.userserEFold(vo);
+	public List<FolderVO> userEFold(FolderVO vo) {
+		return dao.userEFold(vo);
 	}
 	
 	//미술관 폴더 내용 조회
