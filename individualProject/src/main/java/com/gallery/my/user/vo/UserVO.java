@@ -6,6 +6,8 @@ public class UserVO {
 	private String pw;
 	private String nm;
 	private String useYn;
+	private String age;
+	private String gender;
 	public String getId() {
 		return id;
 	}
@@ -30,10 +32,25 @@ public class UserVO {
 	public void setUseYn(String useYn) {
 		this.useYn = useYn;
 	}
+	public String getAge() {
+		return age;
+	}
+	public void setAge(String age) {
+		this.age = age;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
 	@Override
 	public String toString() {
-		return "UserVO [id=" + id + ", pw=" + pw + ", nm=" + nm + ", useYn=" + useYn + "]";
+		return "UserVO [id=" + id + ", pw=" + pw + ", nm=" + nm + ", useYn=" + useYn + ", age=" + age + ", gender="
+				+ gender + "]";
 	}
+	
+	
 	
 	
 }
