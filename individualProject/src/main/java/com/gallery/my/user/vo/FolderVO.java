@@ -8,9 +8,11 @@ public class FolderVO {
 	private String galAd;
 	private String galNm;
 	private String galTn;
+	private String galUrl;
 	private String exhAd;
 	private String exhNm;
 	private String exhTn;
+	private String exhUrl;
 	
 	public String getId() {
 		return id;
@@ -48,6 +50,12 @@ public class FolderVO {
 	public void setGalTn(String galTn) {
 		this.galTn = galTn;
 	}
+	public String getGalUrl() {
+		return galUrl;
+	}
+	public void setGalUrl(String galUrl) {
+		this.galUrl = galUrl;
+	}
 	public String getExhAd() {
 		return exhAd;
 	}
@@ -66,11 +74,18 @@ public class FolderVO {
 	public void setExhTn(String exhTn) {
 		this.exhTn = exhTn;
 	}
+	public String getExhUrl() {
+		return exhUrl;
+	}
+	public void setExhUrl(String exhUrl) {
+		this.exhUrl = exhUrl;
+	}
 	
 	@Override
 	public String toString() {
 		return "FolderVO [id=" + id + ", foldNo=" + foldNo + ", foldNm=" + foldNm + ", galAd=" + galAd + ", galNm="
-				+ galNm + ", galTn=" + galTn + ", exhAd=" + exhAd + ", exhNm=" + exhNm + ", exhTn=" + exhTn + "]";
+				+ galNm + ", galTn=" + galTn + ", galUrl=" + galUrl + ", exhAd=" + exhAd + ", exhNm=" + exhNm
+				+ ", exhTn=" + exhTn + ", exhUrl=" + exhUrl + "]";
 	}
 	
 }
