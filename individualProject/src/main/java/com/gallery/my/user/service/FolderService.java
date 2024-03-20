@@ -44,4 +44,25 @@ public class FolderService {
 	public List<FolderVO> foldContent(FolderVO vo){
 		return dao.foldContent(vo);
 	}
+
+	//전시회 폴더 내용 조회
+	public List<FolderVO> foldEContent(FolderVO vo){
+		return dao.foldEContent(vo);
+	}
+	
+	//미술관 폴더 내용 추가
+	public void insertFContent(FolderVO vo) throws Exception {
+		int result = dao.insertFContent(vo);
+		if (result == 0) {
+			throw new Exception();
+		}
+	}
+	
+	//전시회 폴더 내용 추가
+	public void insertEFContent(FolderVO vo) throws Exception {
+		int result = dao.insertEFContent(vo);
+		if (result == 0) {
+			throw new Exception();
+		}
+	}
 }
