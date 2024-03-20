@@ -73,8 +73,7 @@ window.onload=function(){
 					data-bs-toggle="list" href="#list-2" role="tab">찜한 전시회</a>
 				<a class="list-group-item list-group-item-action list-group-item-light"
 					data-bs-toggle="list" href="#list-3" role="tab">관심 미술관</a>
-				<a class="list-group-item list-group-item-action list-group-item-light"
-					data-bs-toggle="list" href="#list-4" role="tab">비교</a>
+				
 				<a class="list-group-item list-group-item-action list-group-item-light"
 					data-bs-toggle="list" href="#list-5" role="tab">최근 본 전시회</a>
 				<a class="list-group-item list-group-item-action list-group-item-light"
@@ -102,6 +101,15 @@ window.onload=function(){
 						<c:forEach items="${arrE}" var="folder2">
 							<h3>${folder2.foldNm}</h3>
 							<hr>
+							<form method="post" action="<c:url value="/eFoldContentView" />" >
+								<div class="form-group">
+									<input name="id" value="${sessionScope.login.id}" type="hidden" />
+								</div>
+								<div class="form-group pt-1">
+									<input name="foldNo" value="${folder2.foldNo}" type="hidden">
+								</div>
+								<input type="submit" class="btn btn-light form-control" value="폴더열기">
+							</form>
 						</c:forEach>
 						<hr>
 						<form method="post" action="<c:url value="/createEFolderDo" />" >
@@ -119,10 +127,16 @@ window.onload=function(){
 						<!-- 게시글 출력 -->
 						<c:forEach items="${arr}"  var="folder">
 							<h3>${folder.foldNm}</h3>
-<!-- 							<hr> -->
-<%-- 							<c:forEach items="${arrC}" var="content"> --%>
-<%-- 								<h5>${content.galNm}</h5><h5>${content.galAd}</h5><h5>${content.galTn}</h5> --%>
-<%-- 							</c:forEach> --%>
+							<form method="post" action="<c:url value="/foldContentView" />" >
+								<div class="form-group">
+									<input name="id" value="${sessionScope.login.id}" type="hidden" />
+								</div>
+								<div class="form-group pt-1">
+									<input name="foldNo" value="${folder.foldNo}" type="hidden">
+								</div>
+								<input type="submit" class="btn btn-light form-control" value="폴더열기">
+							</form>
+ 							<hr>
 						</c:forEach>
 						<hr>
 						<form method="post" action="<c:url value="/createFolderDo" />" >
@@ -136,11 +150,9 @@ window.onload=function(){
 							<input type="submit" class="btn btn-light form-control" value="폴더생성">
 						</form>
 					</div>
-					<div class="tab-pane" id="list-4" role="tabpanel">
-					4
-					</div>
+					
 					<div class="tab-pane" id="list-5" role="tabpanel">
-					5
+					4
 					</div>
 					<div class="tab-pane" id="list-6" role="tabpanel">
 					<section class="page-section" id="contact" style="margin-top:150px">
