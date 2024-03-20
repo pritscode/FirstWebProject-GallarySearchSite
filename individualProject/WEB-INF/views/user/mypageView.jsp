@@ -74,9 +74,11 @@ window.onload=function(){
 				<a class="list-group-item list-group-item-action list-group-item-light"
 					data-bs-toggle="list" href="#list-3" role="tab">관심 미술관</a>
 				<a class="list-group-item list-group-item-action list-group-item-light"
-					data-bs-toggle="list" href="#list-4" role="tab">최근 본 전시회</a>
+					data-bs-toggle="list" href="#list-4" role="tab">비교</a>
 				<a class="list-group-item list-group-item-action list-group-item-light"
-					data-bs-toggle="list" href="#list-5" role="tab">개인정보 수정</a>
+					data-bs-toggle="list" href="#list-5" role="tab">최근 본 전시회</a>
+				<a class="list-group-item list-group-item-action list-group-item-light"
+					data-bs-toggle="list" href="#list-6" role="tab">개인정보 수정</a>
 			</div>
 		</div>
 		<div class="col-sm-10">
@@ -96,15 +98,51 @@ window.onload=function(){
 						</div>
 					</div>
 					<div class="tab-pane" id="list-2" role="tabpanel">
-					2
+						<!-- 게시글 출력 -->
+						<c:forEach items="${arrE}" var="folder2">
+							<h3>${folder2.foldNm}</h3>
+							<hr>
+						</c:forEach>
+						<hr>
+						<form method="post" action="<c:url value="/createEFolderDo" />" >
+							<h3>새폴더 생성</h3>
+							<div class="form-group">
+								<input name="id" value="${sessionScope.login.id}" type="hidden" />
+							</div>
+							<div class="form-group pt-1">
+								<input type="text" class="form-control" placeholder="폴더이름" name="foldNm">
+							</div>
+							<input type="submit" class="btn btn-light form-control" value="폴더생성">
+						</form>
 					</div>
 					<div class="tab-pane" id="list-3" role="tabpanel">
-					3
+						<!-- 게시글 출력 -->
+						<c:forEach items="${arr}"  var="folder">
+							<h3>${folder.foldNm}</h3>
+<!-- 							<hr> -->
+<%-- 							<c:forEach items="${arrC}" var="content"> --%>
+<%-- 								<h5>${content.galNm}</h5><h5>${content.galAd}</h5><h5>${content.galTn}</h5> --%>
+<%-- 							</c:forEach> --%>
+						</c:forEach>
+						<hr>
+						<form method="post" action="<c:url value="/createFolderDo" />" >
+							<h3>새폴더 생성</h3>
+							<div class="form-group">
+								<input name="id" value="${sessionScope.login.id}" type="hidden" />
+							</div>
+							<div class="form-group pt-1">
+								<input type="text" class="form-control" placeholder="폴더이름" name="foldNm">
+							</div>
+							<input type="submit" class="btn btn-light form-control" value="폴더생성">
+						</form>
 					</div>
 					<div class="tab-pane" id="list-4" role="tabpanel">
 					4
 					</div>
 					<div class="tab-pane" id="list-5" role="tabpanel">
+					5
+					</div>
+					<div class="tab-pane" id="list-6" role="tabpanel">
 					<section class="page-section" id="contact" style="margin-top:150px">
             <div class="container">
                 <!-- Contact Section Heading-->
