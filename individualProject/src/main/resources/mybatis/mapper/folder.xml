@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gallery.my.user.dao.IFolderDAO">
+
+<insert id="createFolder" parameterType="FolderVO">
+	INSERT INTO gallery_fold (id, fold_no, fold_nm)
+	VALUES(#{id}, gallery_fold_seq.NEXTVAL, #{foldNm})
+</insert>
+
+<insert id="createEFolder" parameterType="FolderVO">
+	INSERT INTO gallery_exhibit_fold (id, fold_no, fold_nm)
+	VALUES(#{id}, gallery_exhibit_fold_seq.NEXTVAL, #{foldNm})
+</insert>
+
+<select id="userFold" parameterType="FolderVO" resultType="FolderVO">
+	SELECT fold_nm
+	FROM gallery_fold
+	WHERE id = #{id}
+</select>
+
+<select id="userserEFold" parameterType="FolderVO" resultType="FolderVO">
+	SELECT fold_nm
+	FROM gallery_exhibit_fold
+	WHERE id = #{id}
+</select>
+
+<select id="foldContent" parameterType="FolderVO" resultType="FolderVO">
+	SELECT c.gal_nm
+	     , c.gal_ad
+	     , c.gal_tn
+	FROM gallery_fold a
+	   , gfold_content b
+	   , gallery_list c
+	WHERE a.fold_no = b.fold_no
+	AND   b.gal_no = c.gal_no
+	and a.id = #{id}
+</select>
+
+</mapper>
