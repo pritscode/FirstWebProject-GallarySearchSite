@@ -14,12 +14,14 @@
 
 <select id="userFold" parameterType="FolderVO" resultType="FolderVO">
 	SELECT fold_nm
+	     , fold_no
 	FROM gallery_fold
 	WHERE id = #{id}
 </select>
 
-<select id="userserEFold" parameterType="FolderVO" resultType="FolderVO">
+<select id="userEFold" parameterType="FolderVO" resultType="FolderVO">
 	SELECT fold_nm
+		 , fold_no
 	FROM gallery_exhibit_fold
 	WHERE id = #{id}
 </select>
@@ -33,7 +35,8 @@
 	   , gallery_list c
 	WHERE a.fold_no = b.fold_no
 	AND   b.gal_no = c.gal_no
-	and a.id = #{id}
+	AND   a.id = #{id}
+	AND   a.fold_no = #{foldNo}
 </select>
 
 </mapper>
