@@ -39,4 +39,33 @@
 	AND   a.fold_no = #{foldNo}
 </select>
 
+<select id="foldEContent" parameterType="FolderVO" resultType="FolderVO">
+	SELECT c.exh_nm
+	     , c.exh_ad
+	     , c.exh_tn
+	FROM gallery_exhibit_fold a
+	   , efold_content b
+	   , exhibit_list c
+	WHERE a.fold_no = b.fold_no
+	AND   b.exh_no = c.exh_no
+	AND   a.id = #{id}
+	AND   a.fold_no = #{foldNo}
+</select>
+
+<insert id="insertFContent" parameterType="FolderVO">
+	INSERT INTO gfold_content (fold_no, gal_no) 
+	VALUES ((SELECT fold_no 
+	         FROM gallery_fold 
+	         WHERE fold_nm=#{foldNm} 
+	         AND id=#{id}), #{galNo})
+</insert>
+
+<insert id="insertEFContent" parameterType="FolderVO">
+	INSERT INTO efold_content (fold_no, exh_no) 
+	VALUES ((SELECT fold_no 
+	         FROM gallery_exhibit_fold 
+	         WHERE fold_nm=#{foldNm} 
+	         AND id=#{id}), #{exhNo})
+</insert>
+
 </mapper>
