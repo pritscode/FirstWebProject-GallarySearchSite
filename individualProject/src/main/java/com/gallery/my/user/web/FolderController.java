@@ -53,13 +53,12 @@ public class FolderController {
 	}
 	
 	@RequestMapping("/foldContentView")
-	public String mypageView(HttpSession session, Model model, FolderVO vo) {
+	public String foldContentView(HttpSession session, Model model, FolderVO vo) {
 		System.out.println(vo);
 		UserVO login = (UserVO) session.getAttribute("login");
 		if(login == null) {
 			return "redirect:/loginView";
 		}
-//		vo.setId(login.getId());
 		
 		List<FolderVO> arr = folderservice.userFold(vo);
 		List<FolderVO> arrC = folderservice.foldContent(vo);
@@ -68,9 +67,55 @@ public class FolderController {
 		
 		return "user/foldContentView";
 	}
+
+	@RequestMapping("/eFoldContentView")
+	public String eFoldContentView(HttpSession session, Model model, FolderVO vo) {
+		System.out.println(vo);
+		UserVO login = (UserVO) session.getAttribute("login");
+		if(login == null) {
+			return "redirect:/loginView";
+		}
+		
+		List<FolderVO> arrE = folderservice.userEFold(vo);
+		List<FolderVO> arrEC = folderservice.foldEContent(vo);
+		System.out.println(arrE);
+		model.addAttribute("arrE", arrE);
+		model.addAttribute("arrEC", arrEC);
+		
+		return "user/eFoldContentView";
+	}
 	
-	@RequestMapping("/nonePage")
-	public String nonePage() {
-		return "user/nonePage";
+	@RequestMapping("/insertFContentDo")
+	public String insertFContentDo(HttpServletRequest request, Model model
+			, String fromURL, FolderVO Folder, RedirectAttributes re) {
+		String reqURL = request.getHeader("Referer");
+		model.addAttribute("fromURL", reqURL);
+		try {
+			folderservice.insertFContent(Folder);
+		} catch (Exception e) {
+			e.printStackTrace();
+			re.addFlashAttribute("msg", "관심 리스트에 추가되지 못했습니다.");
+			return "redirect:"+fromURL;
+		}
+		//RedirectAttributes 리다이렉트시 전송하고 싶은데이터를 포함시켜서 리다이렉트 요청을 할 수 있음.
+		re.addFlashAttribute("msg", "관심 리스트에 추가되었습니다.");
+		return "redirect:"+fromURL;
+	}
+	
+	@RequestMapping("/insertEFContentDo")
+	public String insertEFContentDo(HttpServletRequest request, Model model
+			, String fromURL, FolderVO Folder, RedirectAttributes re) {
+		String reqURL = request.getHeader("Referer");
+		model.addAttribute("fromURL", reqURL);
+		try {
+			folderservice.insertEFContent(Folder);
+		} catch (Exception e) {
+			e.printStackTrace();
+			re.addFlashAttribute("msg", "관심 리스트에 추가되지 못했습니다.");
+			return "redirect:"+fromURL;
+		}
+		//RedirectAttributes 리다이렉트시 전송하고 싶은데이터를 포함시켜서 리다이렉트 요청을 할 수 있음.
+		re.addFlashAttribute("msg", "관심 리스트에 추가되었습니다.");
+		return "redirect:"+fromURL;
 	}
 }
