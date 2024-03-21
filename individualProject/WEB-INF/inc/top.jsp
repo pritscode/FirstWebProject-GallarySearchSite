@@ -112,7 +112,7 @@
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="<c:url value="/mypageView" />">${sessionScope.login.id}님의 마이페이지</a></li>
 					<li class="nav-item"><a class="nav-link py-3 px-0 px-lg-3 rounded"href="<c:url value="/logoutDo" />">로그아웃</a></li>
-					<li class="nav-item"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="<c:url value="/" />">문의게시판</a></li>
+					<li class="nav-item"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="<c:url value="/boardView" />">문의게시판</a></li>
 				</ul>
 			</c:if>
 			<form class="d-flex" role="search">
