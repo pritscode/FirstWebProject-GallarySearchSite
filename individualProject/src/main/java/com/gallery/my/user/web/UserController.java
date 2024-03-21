@@ -115,10 +115,8 @@ public class UserController {
 		
 		List<FolderVO> arr = folderservice.userFold(vo);
 		List<FolderVO> arrE = folderservice.userEFold(vo);
-		List<FolderVO> arrC = folderservice.foldContent(vo);
 		model.addAttribute("arr", arr);
 		model.addAttribute("arrE", arrE);
-		model.addAttribute("arrC", arrC);
 		
 		return "user/mypageView";
 	}
@@ -140,6 +138,11 @@ public class UserController {
 	@RequestMapping("/nonePage")
 	public String nonePage() {
 		return "user/nonePage";
+	}
+	
+	@RequestMapping("/boardView")
+	public String boardView() {
+		return "user/boardView";
 	}
 	
 }
