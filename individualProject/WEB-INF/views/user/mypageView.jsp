@@ -97,10 +97,10 @@ window.onload=function(){
 						</div>
 					</div>
 					<div class="tab-pane" id="list-2" role="tabpanel">
-						<!-- 게시글 출력 -->
+						<!-- 폴더 출력 -->
 						<c:forEach items="${arrE}" var="folder2">
-							<h3>${folder2.foldNm}</h3>
 							<hr>
+							<h3>${folder2.foldNm}</h3>
 							<form method="post" action="<c:url value="/eFoldContentView" />" >
 								<div class="form-group">
 									<input name="id" value="${sessionScope.login.id}" type="hidden" />
