@@ -23,7 +23,7 @@
 	<div class="row">
 	<h3>${folder.foldNm}</h3>
 	<!-- <c:set var="cgurl" value="${sessionScope.folder.galUrl}" scope="request" /> -->
-	<c:set var="cgurl" value="/nonePage" scope="request" />
+	<c:set var="cgurl" value="https://sema.seoul.go.kr/" scope="request" />
 	</div>
 	<div class="row" height = "600px">
 	<iframe src=${cgurl} name="left" width="400px" height="600px"></iframe><iframe src=${cgurl} name="right" width="400px" height="600px"></iframe>
