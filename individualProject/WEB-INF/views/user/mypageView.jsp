@@ -118,7 +118,7 @@ window.onload=function(){
 								<input name="id" value="${sessionScope.login.id}" type="hidden" />
 							</div>
 							<div class="form-group pt-1">
-								<input type="text" class="form-control" placeholder="폴더이름" name="foldNm">
+								<input type="text" class="form-control" placeholder="폴더이름" name="foldNm" data-sb-validations="required">
 							</div>
 							<input type="submit" class="btn btn-light form-control" value="폴더생성">
 						</form>
@@ -145,7 +145,7 @@ window.onload=function(){
 								<input name="id" value="${sessionScope.login.id}" type="hidden" />
 							</div>
 							<div class="form-group pt-1">
-								<input type="text" class="form-control" placeholder="폴더이름" name="foldNm">
+								<input type="text" class="form-control" placeholder="폴더이름" name="foldNm" data-sb-validations="required">
 							</div>
 							<input type="submit" class="btn btn-light form-control" value="폴더생성">
 						</form>
