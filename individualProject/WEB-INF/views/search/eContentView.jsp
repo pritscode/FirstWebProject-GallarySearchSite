@@ -16,6 +16,9 @@
 <body>
 	<jsp:include page="/WEB-INF/inc/top.jsp"></jsp:include>
 	<!-- content region -->
+		<h5 class="card-title">${exhVO.exhNm}</h5> 
+		<h5 class="card-title">${exhVO.exhAd}</h5> 
+		<h5 class="card-title">${exhVO.exhTn}</h5> 
 	<!-- content region -->
 	<jsp:include page="/WEB-INF/inc/footer.jsp"></jsp:include>
 </body>
