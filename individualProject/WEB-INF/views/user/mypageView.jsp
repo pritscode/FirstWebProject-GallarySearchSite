@@ -124,7 +124,7 @@ window.onload=function(){
 						</form>
 					</div>
 					<div class="tab-pane" id="list-3" role="tabpanel">
-						<!-- 게시글 출력 -->
+						<!-- 폴더 출력 -->
 						<c:forEach items="${arr}"  var="folder">
 							<h3>${folder.foldNm}</h3>
 							<form method="post" action="<c:url value="/foldContentView" />" >
@@ -139,6 +139,7 @@ window.onload=function(){
  							<hr>
 						</c:forEach>
 						<hr>
+						<!-- 폴더 생성 -->
 						<form method="post" action="<c:url value="/createFolderDo" />" >
 							<h3>새폴더 생성</h3>
 							<div class="form-group">
