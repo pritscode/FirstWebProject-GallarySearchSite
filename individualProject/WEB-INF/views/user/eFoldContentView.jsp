@@ -11,6 +11,10 @@
 }
 </style>
 <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+<script>
+	<!-- <c:set var="cgurl" value="${sessionScope.folder.galUrl}" scope="request" /> -->
+	<c:set var="cgurl" value="https://sema.seoul.go.kr/" scope="request" />
+</script>
 <title>전시회 검색 사이트 - 마이페이지 - 관심 전시회 폴더</title>
 </head>
 <body>
@@ -22,8 +26,6 @@
 	<hr>
 	<div class="row">
 	<h3>${folder.foldNm}</h3>
-	<!-- <c:set var="cgurl" value="${sessionScope.folder.galUrl}" scope="request" /> -->
-	<c:set var="cgurl" value="https://sema.seoul.go.kr/" scope="request" />
 	</div>
 	<div class="row" height = "600px">
 	<iframe src=${cgurl} name="left" width="400px" height="600px"></iframe><iframe src=${cgurl} name="right" width="400px" height="600px"></iframe>
