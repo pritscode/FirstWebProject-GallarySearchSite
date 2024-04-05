@@ -37,50 +37,50 @@
 			<div class="tab-content">
 				<div class="tab-pane active" id="list-1" role="tabpanel">
 					<div class="card-group">
-							<div class="card">
-								<img src="assets/img/image/seoulmuseumofart.jpg" class="card-img-top" alt="gallery1">
-								<div class="card-body">
-									<a href="https://sema.seoul.go.kr/" target="_blank">
-										<h5 class="card-title">서울시립미술관</h5>
-										<p class="card-text">주소: 서울특별시 중구 덕수궁길 61
-										관람료: 대부분 무료
-										전화번호: 02-2124-8800
-										</p>
-									</a>
-								</div>
-								<div class="card-footer">
-									<form method="post" action="<c:url value="/insertFContentDo" />" >
-										<div class="form-group">
-											<input name="id" value="${sessionScope.login.id}" type="hidden" />
-											<input name="galNo" value="1" type="hidden" />
-											<input type="text" class="form-control" placeholder="폴더이름" name="foldNm" maxlength="20" data-sb-validations="required" />
-											<input type="hidden" name="fromURL" value="${fromURL}">
-										</div>
-										<input type="submit"><small class="text-body-secondary">♡ 즐겨찾기</small></input>
-									</form>
-								</div>
-							</div>
-							<div class="card">
-								<img src="assets/img/image/nationalMuseumofModernand....jpg" class="card-img-top" alt="gallery2">
-								<div class="card-body">
-									<a href="https://www.mmca.go.kr/visitingInfo/seoulInfo.do" target="_blank">
-										<h5 class="card-title">국립현대미술관</h5>
-										<p class="card-text">주소: 서울특별시 종로구 삼청로 30 관람료: 현장결제 전화번호: 02‒3701‒9500</p>
-									</a>
-								</div>
-								<div class="card-footer">
-									<form method="post" action="<c:url value="/insertFContentDo" />" >
-										<div class="form-group">
-											<input name="id" value="${sessionScope.login.id}" type="hidden" />
-											<input name="galNo" value="2" type="hidden" />
-											<input name="foldNo" value="" type="" />
-											<input type="hidden" name="fromURL" value="${fromURL}">
-										</div>
-										<input type="submit"><small class="text-body-secondary">♡ 즐겨찾기</small></input>
-									</form>
-								</div>
-							</div>
-							<div class="card">
+ 							<div class="card">
+ 								<img src="assets/img/image/seoulmuseumofart.jpg" class="card-img-top" alt="gallery1">
+ 								<div class="card-body">
+ 									<a href="https://sema.seoul.go.kr/" target="_blank">
+ 										<h5 class="card-title">서울시립미술관</h5>
+ 										<p class="card-text">주소: 서울특별시 중구 덕수궁길 61
+ 										관람료: 대부분 무료
+ 										전화번호: 02-2124-8800
+ 										</p>
+ 									</a>
+ 								</div>
+ 								<div class="card-footer">
+ 									<form method="post" action="<c:url value="/insertFContentDo" />" >
+ 										<div class="form-group">
+ 											<input name="id" value="${sessionScope.login.id}" type="hidden" />
+ 											<input name="galNo" value="1" type="hidden" />
+ 											<input type="text" class="form-control" placeholder="폴더이름" name="foldNm" maxlength="20" data-sb-validations="required" />
+ 											<input type="hidden" name="fromURL" value="${fromURL}">
+ 										</div>
+ 										<input type="submit"><small class="text-body-secondary">♡ 즐겨찾기</small></input>
+ 									</form>
+ 								</div>
+ 							</div>
+ 							<div class="card">
+ 								<img src="assets/img/image/nationalMuseumofModernand....jpg" class="card-img-top" alt="gallery2">
+ 								<div class="card-body">
+ 									<a href="https://www.mmca.go.kr/visitingInfo/seoulInfo.do" target="_blank">
+ 										<h5 class="card-title">국립현대미술관</h5>
+ 										<p class="card-text">주소: 서울특별시 종로구 삼청로 30 관람료: 현장결제 전화번호: 02‒3701‒9500</p>
+ 									</a>
+ 								</div>
+ 								<div class="card-footer">
+ 									<form method="post" action="<c:url value="/insertFContentDo" />" >
+ 										<div class="form-group">
+ 											<input name="id" value="${sessionScope.login.id}" type="hidden" />
+ 											<input name="galNo" value="2" type="hidden" />
+ 											<input type="text" class="form-control" placeholder="폴더이름" name="foldNm" maxlength="20" data-sb-validations="required" />
+ 											<input type="hidden" name="fromURL" value="${fromURL}"> 
+ 										</div>
+ 										<input type="submit"><small class="text-body-secondary">♡ 즐겨찾기</small></input>
+ 									</form>
+ 								</div>
+ 							</div>
+ 							<div class="card">
 								<img src="assets/img/image/sejong.png" class="card-img-top" alt="gallery3">
 								<div class="card-body">
 									<a href="https://www.sejongpac.or.kr/portal/main/main.do" target="_blank">
@@ -93,7 +93,7 @@
 										<div class="form-group">
 											<input name="id" value="${sessionScope.login.id}" type="hidden" />
 											<input name="galNo" value="3" type="hidden" />
-											<input name="foldNo" value="${sessionScope.login.id}" type="hidden" />
+											<input type="text" class="form-control" placeholder="폴더이름" name="foldNm" maxlength="20" data-sb-validations="required" />
 											<input type="hidden" name="fromURL" value="${fromURL}">
 										</div>
 										<input type="submit"><small class="text-body-secondary">♡ 즐겨찾기</small></input>
@@ -103,7 +103,33 @@
 						</div>
 				</div>
 				<div class="tab-pane" id="list-2" role="tabpanel">
-					2
+					<div class="card-group">
+						<c:forEach items="${exhList }" var="exh">
+							<div class="card">
+								<img src="assets/img/image/seoulmuseumofart.jpg" class="card-img-top" alt="exhibit">
+								<div class="card-body">
+									<a href="<c:url value='/eContentView?exhNo=${exh.exhNo}'  />" target="_blank">
+										<h5 class="card-title">${exh.exhNm }</h5>
+										<p class="card-text">주소: ${exh.exhAd }
+										관람료:  ${exh.exhCost }
+										전화번호: ${exh.exhTn }
+										</p>
+									</a>
+								</div>
+								<div class="card-footer">
+									<form method="post" action="<c:url value="/insertEFContentDo" />" >
+										<div class="form-group">
+											<input name="id" value="${sessionScope.login.id}" type="hidden" />
+											<input name="exhNo" value="${exh.exhNo}" type="hidden" />
+											<input type="text" class="form-control" placeholder="폴더이름" name="foldNm" maxlength="20" data-sb-validations="required" />
+											<input type="hidden" name="fromURL" value="${fromURL}">
+										</div>
+										<input type="submit"><small class="text-body-secondary">♡ 즐겨찾기</small></input>
+									</form>
+								</div>
+							</div>
+						</c:forEach>
+					</div>
 				</div>
 				<div class="tab-pane" id="list-3" role="tabpanel">3</div>
 			</div>
