@@ -105,10 +105,6 @@
                       <a class="nav-link" href="regist.html">회원가입</a>
                   </li>
               </ul>
-              <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="서울시립미술관" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit" style="width: 80px;">검색</button>
-              </form>
           </div>
       </div>
   </nav>
@@ -144,17 +140,36 @@
           </div>
           <div class="mb-3 row">
             <label class="form-label col-3" for="gender">성별</label>
-            <div class="form-check col-3">
-              <input class="form-check-input" id="gender1" name="userGen" type="radio" value="M">
-              <label class="form-check-label" for="gender1">M</label>
+            <div class="col-9">
+              <div class="row">
+                <div class="form-check col-4">
+                  <input class="form-check-input" id="gender1" name="userGen" type="radio" value="M">
+                  <label class="form-check-label" for="gender1">M</label>
+                </div>
+                <div class="form-check col-4">
+                  <input class="form-check-input" id="gender2" name="userGen" type="radio" value="W">
+                  <label class="form-check-label" for="gender2">W</label>
+                </div>
+                <div class="form-check col-4">
+                  <input class="form-check-input" id="gender3" name="userGen" type="radio" value="">
+                  <label class="form-check-label" for="gender3">선택안함</label>
+                </div>
+              </div>
             </div>
-            <div class="form-check col-3">
-              <input class="form-check-input" id="gender2" name="userGen" type="radio" value="W">
-              <label class="form-check-label" for="gender2">W</label>
-            </div>
-            <div class="form-check col-3">
-              <input class="form-check-input" id="gender3" name="userGen" type="radio" value="">
-              <label class="form-check-label" for="gender3">선택안함</label>
+          </div>
+          <div class="mb-3 row">
+            <label class="form-label col-3" for="age">나이</label>
+            <div class="col-9">
+              <select class="form-select" id="age" aria-label="Default select example">
+                <option selected>선택 안함</option>
+                <option value="10">10대</option>
+                <option value="20">20대</option>
+                <option value="30">30대</option>
+                <option value="40">40대</option>
+                <option value="50">50대</option>
+                <option value="60">60대</option>
+                <option value="70">70대 이상</option>
+              </select>
             </div>
           </div>
           <button class="btn btn-dark">회원가입</button>
