@@ -48,16 +48,16 @@
 							<div class="card">
 								<img src="resources/img/gg1.jpg" class="card-img-top"
 									height="280" alt="미술관1">
-								<div class="card-body">
+								<a href="<c:url value="/detailView"/>" class="card-body" style="text-decoration: none;">
 									<h5 class="card-title">${sessionScope.seoulGal[0].galNm}</h5>
-								</div>
+								</a>
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">조회 수:
 										${sessionScope.seoulGal[0].galViews}</li>
 									<li class="list-group-item">찜한 수:
 										${sessionScope.seoulGal[0].galMarks}</li>
 								</ul>
-								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
+								<a class="card-body" href="#" style="text-decoration: none;"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
 								</a>
 							</div>
@@ -66,16 +66,16 @@
 							<div class="card">
 								<img src="resources/img/gg2.jpg" class="card-img-top"
 									height="280" alt="미술관2">
-								<div class="card-body">
+								<a href="<c:url value="/detailView"/>" class="card-body" style="text-decoration: none;">
 									<h5 class="card-title">${sessionScope.seoulGal[1].galNm}</h5>
-								</div>
+								</a>
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">조회 수:
 										${sessionScope.seoulGal[1].galViews}</li>
 									<li class="list-group-item">찜한 수:
 										${sessionScope.seoulGal[1].galMarks}</li>
 								</ul>
-								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
+								<a class="card-body" href="#" style="text-decoration: none;"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
 								</a>
 							</div>
@@ -84,16 +84,16 @@
 							<div class="card">
 								<img src="resources/img/gg3.jpg" class="card-img-top"
 									height="280" alt="미술관3">
-								<div class="card-body">
+								<a href="<c:url value="/detailView"/>" class="card-body" style="text-decoration: none;">
 									<h5 class="card-title">${sessionScope.seoulGal[2].galNm}</h5>
-								</div>
+								</a>
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">조회 수:
 										${sessionScope.seoulGal[2].galViews}</li>
 									<li class="list-group-item">찜한 수:
 										${sessionScope.seoulGal[2].galMarks}</li>
 								</ul>
-								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
+								<a class="card-body" href="#" style="text-decoration: none;"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
 								</a>
 							</div>
@@ -102,16 +102,16 @@
 							<div class="card">
 								<img src="resources/img/gg4.jpg" class="card-img-top"
 									height="280" alt="미술관4">
-								<div class="card-body">
+								<a href="<c:url value="/detailView"/>" class="card-body" style="text-decoration: none;">
 									<h5 class="card-title">${sessionScope.seoulGal[3].galNm}</h5>
-								</div>
+								</a>
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">조회 수:
 										${sessionScope.seoulGal[3].galViews}</li>
 									<li class="list-group-item">찜한 수:
 										${sessionScope.seoulGal[3].galMarks}</li>
 								</ul>
-								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
+								<a class="card-body" href="#" style="text-decoration: none;"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
 								</a>
 							</div>
@@ -120,16 +120,16 @@
 							<div class="card">
 								<img src="resources/img/gg5.jpg" class="card-img-top"
 									height="280" alt="미술관5">
-								<div class="card-body">
+								<a href="<c:url value="/detailView"/>" class="card-body" style="text-decoration: none;">
 									<h5 class="card-title">${sessionScope.seoulGal[4].galNm}</h5>
-								</div>
+								</a>
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">조회 수:
 										${sessionScope.seoulGal[4].galViews}</li>
 									<li class="list-group-item">찜한 수:
 										${sessionScope.seoulGal[4].galMarks}</li>
 								</ul>
-								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
+								<a class="card-body" href="#" style="text-decoration: none;"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
 								</a>
 							</div>
@@ -138,16 +138,16 @@
 							<div class="card">
 								<img src="resources/img/gg6.jpg" class="card-img-top"
 									height="280" alt="미술관6">
-								<div class="card-body">
+								<a href="<c:url value="/detailView"/>" class="card-body" style="text-decoration: none;">
 									<h5 class="card-title">${sessionScope.seoulGal[5].galNm}</h5>
-								</div>
+								</a>
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">조회 수:
 										${sessionScope.seoulGal[5].galViews}</li>
 									<li class="list-group-item">찜한 수:
 										${sessionScope.seoulGal[5].galMarks}</li>
 								</ul>
-								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
+								<a class="card-body" href="#" style="text-decoration: none;"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
 								</a>
 							</div>
@@ -156,16 +156,16 @@
 							<div class="card">
 								<img src="resources/img/gg7.jpg" class="card-img-top"
 									height="280" alt="미술관7">
-								<div class="card-body">
+								<a href="<c:url value="/detailView"/>" class="card-body" style="text-decoration: none;">
 									<h5 class="card-title">${sessionScope.seoulGal[6].galNm}</h5>
-								</div>
+								</a>
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">조회 수:
 										${sessionScope.seoulGal[6].galViews}</li>
 									<li class="list-group-item">찜한 수:
 										${sessionScope.seoulGal[6].galMarks}</li>
 								</ul>
-								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
+								<a class="card-body" href="#" style="text-decoration: none;"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
 								</a>
 							</div>
@@ -174,16 +174,16 @@
 							<div class="card">
 								<img src="resources/img/gg8.jpg" class="card-img-top"
 									height="280" alt="미술관8">
-								<div class="card-body">
+								<a href="<c:url value="/detailView"/>" class="card-body" style="text-decoration: none;">
 									<h5 class="card-title">${sessionScope.seoulGal[7].galNm}</h5>
-								</div>
+								</a>
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">조회 수:
 										${sessionScope.seoulGal[7].galViews}</li>
 									<li class="list-group-item">찜한 수:
 										${sessionScope.seoulGal[7].galMarks}</li>
 								</ul>
-								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
+								<a class="card-body" href="#" style="text-decoration: none;"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
 								</a>
 							</div>
@@ -192,16 +192,16 @@
 							<div class="card">
 								<img src="resources/img/gg9.jpg" class="card-img-top"
 									height="280" alt="미술관9">
-								<div class="card-body">
+								<a href="<c:url value="/detailView"/>" class="card-body" style="text-decoration: none;">
 									<h5 class="card-title">${sessionScope.seoulGal[8].galNm}</h5>
-								</div>
+								</a>
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">조회 수:
 										${sessionScope.seoulGal[8].galViews}</li>
 									<li class="list-group-item">찜한 수:
 										${sessionScope.seoulGal[8].galMarks}</li>
 								</ul>
-								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
+								<a class="card-body" href="#" style="text-decoration: none;"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
 								</a>
 							</div>
@@ -219,16 +219,16 @@
 							<div class="card">
 								<img src="resources/img/ep1.jpg" class="card-img-top"
 									height="280" alt="전시회1">
-								<div class="card-body">
+								<a href="<c:url value="/detailView"/>" class="card-body" style="text-decoration: none;">
 									<h5 class="card-title">${sessionScope.seoulExh[0].exhNm}</h5>
-								</div>
+								</a>
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">조회 수:
 										${sessionScope.seoulExh[0].exhViews}</li>
 									<li class="list-group-item">찜한 수:
 										${sessionScope.seoulExh[0].exhMarks}</li>
 								</ul>
-								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
+								<a class="card-body" href="#" style="text-decoration: none;"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
 								</a>
 							</div>
@@ -237,16 +237,16 @@
 							<div class="card">
 								<img src="resources/img/ep2.jpg" class="card-img-top"
 									height="280" alt="전시회2">
-								<div class="card-body">
+								<a href="<c:url value="/detailView"/>" class="card-body" style="text-decoration: none;">
 									<h5 class="card-title">${sessionScope.seoulExh[1].exhNm}</h5>
-								</div>
+								</a>
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">조회 수:
 										${sessionScope.seoulExh[1].exhViews}</li>
 									<li class="list-group-item">찜한 수:
 										${sessionScope.seoulExh[1].exhMarks}</li>
 								</ul>
-								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
+								<a class="card-body" href="#" style="text-decoration: none;"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
 								</a>
 							</div>
@@ -255,16 +255,16 @@
 							<div class="card">
 								<img src="resources/img/ep3.jpg" class="card-img-top"
 									height="280" alt="전시회3">
-								<div class="card-body">
+								<a href="<c:url value="/detailView"/>" class="card-body" style="text-decoration: none;">
 									<h5 class="card-title">${sessionScope.seoulExh[2].exhNm}</h5>
-								</div>
+								</a>
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">조회 수:
 										${sessionScope.seoulExh[2].exhViews}</li>
 									<li class="list-group-item">찜한 수:
 										${sessionScope.seoulExh[2].exhMarks}</li>
 								</ul>
-								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
+								<a class="card-body" href="#" style="text-decoration: none;"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
 								</a>
 							</div>
@@ -273,16 +273,16 @@
 							<div class="card">
 								<img src="resources/img/ep4.jpg" class="card-img-top"
 									height="280" alt="전시회4">
-								<div class="card-body">
+								<a href="<c:url value="/detailView"/>" class="card-body" style="text-decoration: none;">
 									<h5 class="card-title">${sessionScope.seoulExh[3].exhNm}</h5>
-								</div>
+								</a>
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">조회 수:
 										${sessionScope.seoulExh[3].exhViews}</li>
 									<li class="list-group-item">찜한 수:
 										${sessionScope.seoulExh[3].exhMarks}</li>
 								</ul>
-								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
+								<a class="card-body" href="#" style="text-decoration: none;"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
 								</a>
 							</div>
@@ -291,16 +291,16 @@
 							<div class="card">
 								<img src="resources/img/ep5.jpg" class="card-img-top"
 									height="280" alt="전시회5">
-								<div class="card-body">
+								<a href="<c:url value="/detailView"/>" class="card-body" style="text-decoration: none;">
 									<h5 class="card-title">${sessionScope.seoulExh[4].exhNm}</h5>
-								</div>
+								</a>
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">조회 수:
 										${sessionScope.seoulExh[4].exhViews}</li>
 									<li class="list-group-item">찜한 수:
 										${sessionScope.seoulExh[4].exhMarks}</li>
 								</ul>
-								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
+								<a class="card-body" href="#" style="text-decoration: none;"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
 								</a>
 							</div>
@@ -309,16 +309,16 @@
 							<div class="card">
 								<img src="resources/img/ep6.jpg" class="card-img-top"
 									height="280" alt="전시회6">
-								<div class="card-body">
+								<a href="<c:url value="/detailView"/>" class="card-body" style="text-decoration: none;">
 									<h5 class="card-title">${sessionScope.seoulExh[5].exhNm}</h5>
-								</div>
+								</a>
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">조회 수:
 										${sessionScope.seoulExh[5].exhViews}</li>
 									<li class="list-group-item">찜한 수:
 										${sessionScope.seoulExh[5].exhMarks}</li>
 								</ul>
-								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
+								<a class="card-body" href="#" style="text-decoration: none;"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
 								</a>
 							</div>
@@ -327,16 +327,16 @@
 							<div class="card">
 								<img src="resources/img/ep7.jpg" class="card-img-top"
 									height="280" alt="전시회7">
-								<div class="card-body">
+								<a href="<c:url value="/detailView"/>" class="card-body" style="text-decoration: none;">
 									<h5 class="card-title">${sessionScope.seoulExh[6].exhNm}</h5>
-								</div>
+								</a>
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">조회 수:
 										${sessionScope.seoulExh[6].exhViews}</li>
 									<li class="list-group-item">찜한 수:
 										${sessionScope.seoulExh[6].exhMarks}</li>
 								</ul>
-								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
+								<a class="card-body" href="#" style="text-decoration: none;"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
 								</a>
 							</div>
@@ -345,16 +345,16 @@
 							<div class="card">
 								<img src="resources/img/ep8.jpg" class="card-img-top"
 									height="280" alt="전시회8">
-								<div class="card-body">
+								<a href="<c:url value="/detailView"/>" class="card-body" style="text-decoration: none;">
 									<h5 class="card-title">${sessionScope.seoulExh[7].exhNm}</h5>
-								</div>
+								</a>
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">조회 수:
 										${sessionScope.seoulExh[7].exhViews}</li>
 									<li class="list-group-item">찜한 수:
 										${sessionScope.seoulExh[7].exhMarks}</li>
 								</ul>
-								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
+								<a class="card-body" href="#" style="text-decoration: none;"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
 								</a>
 							</div>
@@ -363,16 +363,16 @@
 							<div class="card">
 								<img src="resources/img/ep9.jpg" class="card-img-top"
 									height="280" alt="전시회9">
-								<div class="card-body">
+								<a href="<c:url value="/detailView"/>" class="card-body" style="text-decoration: none;">
 									<h5 class="card-title">${sessionScope.seoulExh[8].exhNm}</h5>
-								</div>
+								</a>
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">조회 수:
 										${sessionScope.seoulExh[8].exhViews}</li>
 									<li class="list-group-item">찜한 수:
 										${sessionScope.seoulExh[8].exhMarks}</li>
 								</ul>
-								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
+								<a class="card-body" href="#" style="text-decoration: none;"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
 								</a>
 							</div>
