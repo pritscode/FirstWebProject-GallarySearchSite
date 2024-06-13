@@ -78,12 +78,12 @@
 							<div class="card">
 								<img src="resources/img/ep1.jpg" class="card-img-top"
 									height="280" alt="전시회1">
-								<div class="card-body">
-									<h5 class="card-title">AI 전시회</h5>
-								</div>
+								<a href="<c:url value="/detailView" />" class="card-body">
+									<h5 class="card-title" style="text-decoration: none;">${sessionScope.popExh[0].exhNm}</h5>
+								</a>
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item">조회 수: 20</li>
-									<li class="list-group-item">찜한 수: 00</li>
+									<li class="list-group-item">조회 수: ${sessionScope.popExh[0].exhViews}</li>
+									<li class="list-group-item">찜한 수: ${sessionScope.popExh[0].exhMarks}</li>
 								</ul>
 								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
@@ -95,11 +95,11 @@
 								<img src="resources/img/ep2.jpg" class="card-img-top"
 									height="280" alt="전시회2">
 								<div class="card-body">
-									<h5 class="card-title">황금 전시회</h5>
+									<h5 class="card-title">${sessionScope.popExh[1].exhNm}</h5>
 								</div>
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item">조회 수: 20</li>
-									<li class="list-group-item">찜한 수: 00</li>
+									<li class="list-group-item">조회 수: ${sessionScope.popExh[1].exhViews}</li>
+									<li class="list-group-item">찜한 수: ${sessionScope.popExh[1].exhMarks}</li>
 								</ul>
 								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
@@ -111,11 +111,11 @@
 								<img src="resources/img/ep3.jpg" class="card-img-top"
 									height="280" alt="전시회3">
 								<div class="card-body">
-									<h5 class="card-title">서울 시립 미술관</h5>
+									<h5 class="card-title">${sessionScope.popExh[2].exhNm}</h5>
 								</div>
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item">조회 수: 20</li>
-									<li class="list-group-item">찜한 수: 00</li>
+									<li class="list-group-item">조회 수: ${sessionScope.popExh[2].exhViews}</li>
+									<li class="list-group-item">찜한 수: ${sessionScope.popExh[2].exhMarks}</li>
 								</ul>
 								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
@@ -127,11 +127,11 @@
 								<img src="resources/img/ep4.jpg" class="card-img-top"
 									height="280" alt="전시회4">
 								<div class="card-body">
-									<h5 class="card-title">서울 시립 미술관</h5>
+									<h5 class="card-title">${sessionScope.popExh[3].exhNm}</h5>
 								</div>
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item">조회 수: 20</li>
-									<li class="list-group-item">찜한 수: 00</li>
+									<li class="list-group-item">조회 수: ${sessionScope.popExh[3].exhViews}</li>
+									<li class="list-group-item">찜한 수: ${sessionScope.popExh[3].exhMarks}</li>
 								</ul>
 								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
@@ -143,11 +143,11 @@
 								<img src="resources/img/ep5.jpg" class="card-img-top"
 									height="280" alt="전시회5">
 								<div class="card-body">
-									<h5 class="card-title">서울 시립 미술관</h5>
+									<h5 class="card-title">${sessionScope.popExh[4].exhNm}</h5>
 								</div>
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item">조회 수: 20</li>
-									<li class="list-group-item">찜한 수: 00</li>
+									<li class="list-group-item">조회 수: ${sessionScope.popExh[4].exhViews}</li>
+									<li class="list-group-item">찜한 수: ${sessionScope.popExh[4].exhMarks}</li>
 								</ul>
 								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
@@ -159,11 +159,11 @@
 								<img src="resources/img/ep6.jpg" class="card-img-top"
 									height="280" alt="전시회6">
 								<div class="card-body">
-									<h5 class="card-title">서울 시립 미술관</h5>
+									<h5 class="card-title">${sessionScope.popExh[5].exhNm}</h5>
 								</div>
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item">조회 수: 20</li>
-									<li class="list-group-item">찜한 수: 00</li>
+									<li class="list-group-item">조회 수: ${sessionScope.popExh[5].exhViews}</li>
+									<li class="list-group-item">찜한 수: ${sessionScope.popExh[5].exhMarks}</li>
 								</ul>
 								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
@@ -175,11 +175,11 @@
 								<img src="resources/img/ep7.jpg" class="card-img-top"
 									height="280" alt="전시회7">
 								<div class="card-body">
-									<h5 class="card-title">서울 시립 미술관</h5>
+									<h5 class="card-title">${sessionScope.popExh[6].exhNm}</h5>
 								</div>
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item">조회 수: 20</li>
-									<li class="list-group-item">찜한 수: 00</li>
+									<li class="list-group-item">조회 수: ${sessionScope.popExh[6].exhViews}</li>
+									<li class="list-group-item">찜한 수: ${sessionScope.popExh[6].exhMarks}</li>
 								</ul>
 								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
@@ -191,11 +191,11 @@
 								<img src="resources/img/ep8.jpg" class="card-img-top"
 									height="280" alt="전시회8">
 								<div class="card-body">
-									<h5 class="card-title">서울 시립 미술관</h5>
+									<h5 class="card-title">${sessionScope.popExh[7].exhNm}</h5>
 								</div>
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item">조회 수: 20</li>
-									<li class="list-group-item">찜한 수: 00</li>
+									<li class="list-group-item">조회 수: ${sessionScope.popExh[7].exhViews}</li>
+									<li class="list-group-item">찜한 수: ${sessionScope.popExh[7].exhMarks}</li>
 								</ul>
 								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
@@ -207,11 +207,11 @@
 								<img src="resources/img/ep9.jpg" class="card-img-top"
 									height="280" alt="전시회9">
 								<div class="card-body">
-									<h5 class="card-title">서울 시립 미술관</h5>
+									<h5 class="card-title">${sessionScope.popExh[8].exhNm}</h5>
 								</div>
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item">조회 수: 20</li>
-									<li class="list-group-item">찜한 수: 00</li>
+									<li class="list-group-item">조회 수: ${sessionScope.popExh[8].exhViews}</li>
+									<li class="list-group-item">찜한 수: ${sessionScope.popExh[8].exhMarks}</li>
 								</ul>
 								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
@@ -230,11 +230,11 @@
 								<img src="resources/img/ep1.jpg" class="card-img-top"
 									height="280" alt="전시회1">
 								<div class="card-body">
-									<h5 class="card-title">AI 전시회</h5>
+									<h5 class="card-title">${sessionScope.newExh[0].exhNm}</h5>
 								</div>
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item">조회 수: 20</li>
-									<li class="list-group-item">찜한 수: 00</li>
+									<li class="list-group-item">조회 수: ${sessionScope.newExh[0].exhViews}</li>
+									<li class="list-group-item">찜한 수: ${sessionScope.newExh[0].exhMarks}</li>
 								</ul>
 								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
@@ -246,11 +246,11 @@
 								<img src="resources/img/ep2.jpg" class="card-img-top"
 									height="280" alt="전시회2">
 								<div class="card-body">
-									<h5 class="card-title">황금 전시회</h5>
+									<h5 class="card-title">${sessionScope.newExh[1].exhNm}</h5>
 								</div>
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item">조회 수: 20</li>
-									<li class="list-group-item">찜한 수: 00</li>
+									<li class="list-group-item">조회 수: ${sessionScope.newExh[1].exhViews}</li>
+									<li class="list-group-item">찜한 수: ${sessionScope.newExh[1].exhMarks}</li>
 								</ul>
 								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
@@ -262,11 +262,11 @@
 								<img src="resources/img/ep3.jpg" class="card-img-top"
 									height="280" alt="전시회3">
 								<div class="card-body">
-									<h5 class="card-title">서울 시립 미술관</h5>
+									<h5 class="card-title">${sessionScope.newExh[2].exhNm}</h5>
 								</div>
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item">조회 수: 20</li>
-									<li class="list-group-item">찜한 수: 00</li>
+									<li class="list-group-item">조회 수: ${sessionScope.newExh[2].exhViews}</li>
+									<li class="list-group-item">찜한 수: ${sessionScope.newExh[2].exhMarks}</li>
 								</ul>
 								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
@@ -278,11 +278,11 @@
 								<img src="resources/img/ep4.jpg" class="card-img-top"
 									height="280" alt="전시회4">
 								<div class="card-body">
-									<h5 class="card-title">서울 시립 미술관</h5>
+									<h5 class="card-title">${sessionScope.newExh[3].exhNm}</h5>
 								</div>
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item">조회 수: 20</li>
-									<li class="list-group-item">찜한 수: 00</li>
+									<li class="list-group-item">조회 수: ${sessionScope.newExh[3].exhViews}</li>
+									<li class="list-group-item">찜한 수: ${sessionScope.newExh[3].exhMarks}</li>
 								</ul>
 								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
@@ -294,11 +294,11 @@
 								<img src="resources/img/ep5.jpg" class="card-img-top"
 									height="280" alt="전시회5">
 								<div class="card-body">
-									<h5 class="card-title">서울 시립 미술관</h5>
+									<h5 class="card-title">${sessionScope.newExh[4].exhNm}</h5>
 								</div>
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item">조회 수: 20</li>
-									<li class="list-group-item">찜한 수: 00</li>
+									<li class="list-group-item">조회 수: ${sessionScope.newExh[4].exhViews}</li>
+									<li class="list-group-item">찜한 수: ${sessionScope.newExh[4].exhMarks}</li>
 								</ul>
 								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
@@ -310,11 +310,11 @@
 								<img src="resources/img/ep6.jpg" class="card-img-top"
 									height="280" alt="전시회6">
 								<div class="card-body">
-									<h5 class="card-title">서울 시립 미술관</h5>
+									<h5 class="card-title">${sessionScope.newExh[5].exhNm}</h5>
 								</div>
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item">조회 수: 20</li>
-									<li class="list-group-item">찜한 수: 00</li>
+									<li class="list-group-item">조회 수: ${sessionScope.newExh[5].exhViews}</li>
+									<li class="list-group-item">찜한 수: ${sessionScope.newExh[5].exhMarks}</li>
 								</ul>
 								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
@@ -326,11 +326,11 @@
 								<img src="resources/img/ep7.jpg" class="card-img-top"
 									height="280" alt="전시회7">
 								<div class="card-body">
-									<h5 class="card-title">서울 시립 미술관</h5>
+									<h5 class="card-title">${sessionScope.newExh[6].exhNm}</h5>
 								</div>
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item">조회 수: 20</li>
-									<li class="list-group-item">찜한 수: 00</li>
+									<li class="list-group-item">조회 수: ${sessionScope.newExh[6].exhViews}</li>
+									<li class="list-group-item">찜한 수: ${sessionScope.newExh[6].exhMarks}</li>
 								</ul>
 								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
@@ -342,11 +342,11 @@
 								<img src="resources/img/ep8.jpg" class="card-img-top"
 									height="280" alt="전시회8">
 								<div class="card-body">
-									<h5 class="card-title">서울 시립 미술관</h5>
+									<h5 class="card-title">${sessionScope.newExh[7].exhNm}</h5>
 								</div>
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item">조회 수: 20</li>
-									<li class="list-group-item">찜한 수: 00</li>
+									<li class="list-group-item">조회 수: ${sessionScope.newExh[7].exhViews}</li>
+									<li class="list-group-item">찜한 수: ${sessionScope.newExh[7].exhMarks}</li>
 								</ul>
 								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
@@ -358,11 +358,11 @@
 								<img src="resources/img/ep9.jpg" class="card-img-top"
 									height="280" alt="전시회9">
 								<div class="card-body">
-									<h5 class="card-title">서울 시립 미술관</h5>
+									<h5 class="card-title">${sessionScope.newExh[8].exhNm}</h5>
 								</div>
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item">조회 수: 20</li>
-									<li class="list-group-item">찜한 수: 00</li>
+									<li class="list-group-item">조회 수: ${sessionScope.newExh[8].exhViews}</li>
+									<li class="list-group-item">찜한 수: ${sessionScope.newExh[8].exhMarks}</li>
 								</ul>
 								<a class="card-body" href="#"> <i class="bi bi-heart"></i>
 									<p class="card-text" style="display: inline-block;">찜 하기</p>
