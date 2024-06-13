@@ -22,7 +22,7 @@
 	
 	<update id="deleteMember" parameterType="MemberVO">
 		UPDATE members
-		SET use_yn = 'Y'
+		SET use_yn = 'N'
 		WHERE mem_id = #{memId}
 	</update>
 	
