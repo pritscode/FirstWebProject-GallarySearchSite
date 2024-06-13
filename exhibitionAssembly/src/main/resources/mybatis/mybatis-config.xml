@@ -14,5 +14,6 @@
 		<typeAlias type="com.gallery.my.member.vo.MemberVO" alias="MemberVO"/>
 		<typeAlias type="com.gallery.my.search.vo.galleryVO" alias="galleryVO"/>
 		<typeAlias type="com.gallery.my.search.vo.exhibitVO" alias="exhibitVO"/>
+		<typeAlias type="com.gallery.my.common.vo.StaticVO" alias="StaticVO"/>
 	</typeAliases>
 </configuration>
