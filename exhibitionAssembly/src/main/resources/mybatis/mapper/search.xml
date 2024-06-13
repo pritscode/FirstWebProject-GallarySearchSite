@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gallery.my.search.dao.ISearchDAO">
+
+	<!-- 인기 미술관 조회 -->
+	<select id="popGal" parameterType="galleryVO" resultType="galleryVO">
+		SELECT a.gal_id, a.gal_nm, a.gal_adr, a.gal_tel, a.gal_url, a.gal_views, COALESCE(b.gal_marks, 0) as gal_marks, a.use_yn
+		FROM gallerys a
+		LEFT JOIN (
+		    SELECT gal_id, COUNT(mem_id) as gal_marks
+		    FROM gal_mark
+		    GROUP BY gal_id
+		) b ON a.gal_id = b.gal_id
+		ORDER BY gal_marks DESC
+	</select>
+	
+	<!-- 인기 전시회 조회 -->
+	<select id="popExh" parameterType="exhibitVO" resultType="exhibitVO">
+		SELECT a.exh_id, a.exh_nm, a.exh_adr, a.exh_tel, a.exh_views, COALESCE(b.exh_marks, 0) as exh_marks, a.e_dy, a.use_yn
+		FROM exhibitions a
+		LEFT JOIN (
+		    SELECT exh_id, COUNT(mem_id) as exh_marks
+		    FROM exh_mark
+		    GROUP BY exh_id
+		) b ON a.exh_id = b.exh_id
+		ORDER BY exh_marks DESC
+	</select>
+	
+	<!-- 최신 전시회 조회 -->
+	<select id="newExh" parameterType="exhibitVO" resultType="exhibitVO">
+		SELECT a.exh_id, a.exh_nm, a.exh_adr, a.exh_tel, a.exh_views, COALESCE(b.exh_marks, 0) as exh_marks, a.e_dy, a.use_yn
+		FROM exhibitions a
+		LEFT JOIN (
+		    SELECT exh_id, COUNT(mem_id) as exh_marks
+		    FROM exh_mark
+		    GROUP BY exh_id
+		) b ON a.exh_id = b.exh_id
+		ORDER BY e_dy DESC
+	</select>
+	
+	<!-- 서울 미술관 조회 -->
+	<select id="seoulGal" parameterType="galleryVO" resultType="galleryVO">
+		SELECT a.gal_id, a.gal_nm, a.gal_adr, a.gal_tel, a.gal_url, a.gal_views, COALESCE(b.gal_marks, 0) as gal_marks, a.use_yn
+		FROM gallerys a
+		LEFT JOIN (
+		    SELECT gal_id, COUNT(mem_id) as gal_marks
+		    FROM gal_mark
+		    GROUP BY gal_id
+		) b ON a.gal_id = b.gal_id
+		WHERE gal_adr LIKE '서울%'
+	</select>
+	
+	<!-- 서울 전시회 조회 -->
+	<select id="seoulExh" parameterType="exhibitVO" resultType="exhibitVO">
+		SELECT a.exh_id, a.exh_nm, a.exh_adr, a.exh_tel, a.exh_views, COALESCE(b.exh_marks, 0) as exh_marks, a.e_dy, a.use_yn
+		FROM exhibitions a
+		LEFT JOIN (
+		    SELECT exh_id, COUNT(mem_id) as exh_marks
+		    FROM exh_mark
+		    GROUP BY exh_id
+		) b ON a.exh_id = b.exh_id
+		WHERE exh_adr LIKE '서울%'
+	</select>
+	
+</mapper>
