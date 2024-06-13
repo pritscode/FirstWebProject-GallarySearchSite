@@ -32,10 +32,5 @@ public class SearchController {
 		return "search/seoulView";
 	}
 	
-	@RequestMapping("/detailView")
-	public String detailView(galleryVO galvo, exhibitVO exhvo, HttpSession session) {
-		
-		return "search/detailView";
-	}
 	
 }
