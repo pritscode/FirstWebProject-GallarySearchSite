@@ -76,7 +76,6 @@
 	              </div>
 	              <ul class="list-group list-group-flush">
 				    <li class="list-group-item">조회 수: 20</li>
-				    <li class="list-group-item">찜한 수: 00</li>
 				  </ul>
 				  <a class="card-body" href="#">
 				  	<i class="bi bi-heart"></i>
@@ -92,7 +91,6 @@
 	              </div>
 	              <ul class="list-group list-group-flush">
 				    <li class="list-group-item">조회 수: 20</li>
-				    <li class="list-group-item">찜한 수: 00</li>
 				  </ul>
 				  <a class="card-body" href="#">
 				  	<i class="bi bi-heart"></i>
@@ -108,7 +106,6 @@
 	              </div>
 	              <ul class="list-group list-group-flush">
 				    <li class="list-group-item">조회 수: 20</li>
-				    <li class="list-group-item">찜한 수: 00</li>
 				  </ul>
 				  <a class="card-body" href="#">
 				  	<i class="bi bi-heart"></i>
@@ -124,7 +121,6 @@
 	              </div>
 	              <ul class="list-group list-group-flush">
 				    <li class="list-group-item">조회 수: 20</li>
-				    <li class="list-group-item">찜한 수: 00</li>
 				  </ul>
 				  <a class="card-body" href="#">
 				  	<i class="bi bi-heart"></i>
@@ -140,7 +136,6 @@
 	              </div>
 	              <ul class="list-group list-group-flush">
 				    <li class="list-group-item">조회 수: 20</li>
-				    <li class="list-group-item">찜한 수: 00</li>
 				  </ul>
 				  <a class="card-body" href="#">
 				  	<i class="bi bi-heart"></i>
@@ -156,7 +151,6 @@
 	              </div>
 	              <ul class="list-group list-group-flush">
 				    <li class="list-group-item">조회 수: 20</li>
-				    <li class="list-group-item">찜한 수: 00</li>
 				  </ul>
 				  <a class="card-body" href="#">
 				  	<i class="bi bi-heart"></i>
@@ -172,7 +166,6 @@
 	              </div>
 	              <ul class="list-group list-group-flush">
 				    <li class="list-group-item">조회 수: 20</li>
-				    <li class="list-group-item">찜한 수: 00</li>
 				  </ul>
 				  <a class="card-body" href="#">
 				  	<i class="bi bi-heart"></i>
@@ -188,7 +181,6 @@
 	              </div>
 	              <ul class="list-group list-group-flush">
 				    <li class="list-group-item">조회 수: 20</li>
-				    <li class="list-group-item">찜한 수: 00</li>
 				  </ul>
 				  <a class="card-body" href="#">
 				  	<i class="bi bi-heart"></i>
@@ -204,7 +196,6 @@
 	              </div>
 	              <ul class="list-group list-group-flush">
 				    <li class="list-group-item">조회 수: 20</li>
-				    <li class="list-group-item">찜한 수: 00</li>
 				  </ul>
 				  <a class="card-body" href="#">
 				  	<i class="bi bi-heart"></i>
@@ -224,7 +215,6 @@
 	              </div>
 	              <ul class="list-group list-group-flush">
 				    <li class="list-group-item">조회 수: 20</li>
-				    <li class="list-group-item">찜한 수: 00</li>
 				  </ul>
 				  <a class="card-body" href="#">
 				  	<i class="bi bi-heart"></i>
@@ -240,7 +230,6 @@
 	              </div>
 	              <ul class="list-group list-group-flush">
 				    <li class="list-group-item">조회 수: 20</li>
-				    <li class="list-group-item">찜한 수: 00</li>
 				  </ul>
 				  <a class="card-body" href="#">
 				  	<i class="bi bi-heart"></i>
@@ -256,7 +245,6 @@
 	              </div>
 	              <ul class="list-group list-group-flush">
 				    <li class="list-group-item">조회 수: 20</li>
-				    <li class="list-group-item">찜한 수: 00</li>
 				  </ul>
 				  <a class="card-body" href="#">
 				  	<i class="bi bi-heart"></i>
@@ -272,7 +260,6 @@
 	              </div>
 	              <ul class="list-group list-group-flush">
 				    <li class="list-group-item">조회 수: 20</li>
-				    <li class="list-group-item">찜한 수: 00</li>
 				  </ul>
 				  <a class="card-body" href="#">
 				  	<i class="bi bi-heart"></i>
@@ -288,7 +275,6 @@
 	              </div>
 	              <ul class="list-group list-group-flush">
 				    <li class="list-group-item">조회 수: 20</li>
-				    <li class="list-group-item">찜한 수: 00</li>
 				  </ul>
 				  <a class="card-body" href="#">
 				  	<i class="bi bi-heart"></i>
@@ -304,7 +290,6 @@
 	              </div>
 	              <ul class="list-group list-group-flush">
 				    <li class="list-group-item">조회 수: 20</li>
-				    <li class="list-group-item">찜한 수: 00</li>
 				  </ul>
 				  <a class="card-body" href="#">
 				  	<i class="bi bi-heart"></i>
@@ -320,7 +305,6 @@
 	              </div>
 	              <ul class="list-group list-group-flush">
 				    <li class="list-group-item">조회 수: 20</li>
-				    <li class="list-group-item">찜한 수: 00</li>
 				  </ul>
 				  <a class="card-body" href="#">
 				  	<i class="bi bi-heart"></i>
@@ -336,7 +320,6 @@
 	              </div>
 	              <ul class="list-group list-group-flush">
 				    <li class="list-group-item">조회 수: 20</li>
-				    <li class="list-group-item">찜한 수: 00</li>
 				  </ul>
 				  <a class="card-body" href="#">
 				  	<i class="bi bi-heart"></i>
@@ -352,7 +335,6 @@
 	              </div>
 	              <ul class="list-group list-group-flush">
 				    <li class="list-group-item">조회 수: 20</li>
-				    <li class="list-group-item">찜한 수: 00</li>
 				  </ul>
 				  <a class="card-body" href="#">
 				  	<i class="bi bi-heart"></i>
