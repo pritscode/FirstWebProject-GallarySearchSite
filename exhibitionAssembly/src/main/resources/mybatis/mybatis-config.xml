@@ -12,5 +12,7 @@
 	<!-- mapper vo 매핑 경로를 간략하게 쓸 때 사용 -->
 	<typeAliases>
 		<typeAlias type="com.gallery.my.member.vo.MemberVO" alias="MemberVO"/>
+		<typeAlias type="com.gallery.my.search.vo.galleryVO" alias="galleryVO"/>
+		<typeAlias type="com.gallery.my.search.vo.exhibitVO" alias="exhibitVO"/>
 	</typeAliases>
 </configuration>
