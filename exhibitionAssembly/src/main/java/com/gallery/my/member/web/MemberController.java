@@ -109,7 +109,7 @@ public class MemberController {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return "redirect:/myPageView";
+		return "redirect:/mypageView";
 	}
 	
 	@ResponseBody
